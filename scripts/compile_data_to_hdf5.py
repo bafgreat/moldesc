@@ -311,7 +311,7 @@ def extract_ligand_folder(
             atoms = parser.get_ase_atoms()
             structure_group = h5.create_group("final_structure")
             write_value(structure_group, "symbols", atoms.get_chemical_symbols())
-            write_value(structure_group, "positions_angstrom", atoms.get_positions())
+            write_value(structure_group, "positions", atoms.get_positions())
             write_value(structure_group, "atomic_numbers", atoms.get_atomic_numbers())
         except Exception as exc:
             status_group.attrs["final_structure_error"] = str(exc)
@@ -329,6 +329,13 @@ def extract_ligand_folder(
                     continue
 
                 if file.suffix in LARGE_BINARY_SUFFIXES:
+                    continue
+                if (
+                    file.name == "submit.sh"
+                    or file.name.startswith("slurm")
+                    or file.name.endswith("_slurm.out")
+                    or file.name.endswith("_slurm.log")
+                ):
                     continue
 
                 if should_store_as_raw_text(file):
