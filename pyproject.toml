@@ -1,0 +1,10 @@
+[project]
+name = "moldesc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "h5py>=3.16.0",
+    "mofstructure>=0.1.8.6",
+]
