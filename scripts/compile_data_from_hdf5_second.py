@@ -2,8 +2,18 @@
 orca_to_hdf5.py
 ---------------
 Walk a directory of ORCA calculations and write one HDF5 file per
-calculation.  A "calculation" is identified by a shared stem, e.g.
-    ethanol.out  +  ethanol.hess  →  ethanol.h5
+calculation.  Each calculation lives in its own sub-folder; the HDF5
+file is named after that sub-folder, e.g.
+
+    ZZYASVWWDLJXIM-UHFFFAOYSA-N/
+        WEWNES.out
+        WEWNES.hess
+        WEWNES_slurm.out   ← ignored
+        WEWNES_slurm.log   ← ignored
+    →  ZZYASVWWDLJXIM-UHFFFAOYSA-N.h5
+
+If the .out and .hess files sit directly in the input directory
+(no sub-folder), the input directory name itself is used as the stem.
 
 Layout inside each HDF5 file
 -----------------------------
@@ -99,7 +109,7 @@ import numpy as np
 # ---------------------------------------------------------------------------
 # Adjust this import to wherever your parsers actually live
 # ---------------------------------------------------------------------------
-from moldesc.orca_parser.parse_output import OrcaOutputParser, OrcaHessParser   # ← change if needed
+from orca_parser import OrcaOutputParser, OrcaHessParser   # ← change if needed
 
 log = logging.getLogger(__name__)
 
@@ -308,9 +318,9 @@ def write_spectra(f: h5py.File, p: OrcaOutputParser):
         rg = grp.require_group("raman")
         modes = sorted(raman.keys(), key=int)
         rg.create_dataset("mode_index",    data=np.array([int(m) for m in modes], dtype=np.int32))
-        rg.create_dataset("frequency",     data=np.array([raman[m]["frequency"]   for m in modes], dtype=float))
-        rg.create_dataset("activity",      data=np.array([raman[m]["activity"]    for m in modes], dtype=float))
-        rg.create_dataset("depolarization", data=np.array([raman[m]["depolarization"] for m in modes], dtype=float))
+        rg.create_dataset("frequency",     data=np.array([raman[m]["frequency"]     for m in modes], dtype=float))
+        rg.create_dataset("activity",      data=np.array([raman[m]["activity"]      for m in modes], dtype=float))
+        rg.create_dataset("depolarization",data=np.array([raman[m]["depolarization"]for m in modes], dtype=float))
 
     # VCD
     vcd = _safe(p.get_vcd_spectrum, default={}, label="vcd_spectrum")
@@ -318,8 +328,8 @@ def write_spectra(f: h5py.File, p: OrcaOutputParser):
         vg = grp.require_group("vcd")
         modes = sorted(vcd.keys(), key=int)
         vg.create_dataset("mode_index", data=np.array([int(m) for m in modes], dtype=np.int32))
-        vg.create_dataset("frequency", data=np.array([vcd[m]["frequency"] for m in modes], dtype=float))
-        vg.create_dataset("intensity", data=np.array([vcd[m]["intensity"] for m in modes], dtype=float))
+        vg.create_dataset("frequency",  data=np.array([vcd[m]["frequency"]  for m in modes], dtype=float))
+        vg.create_dataset("intensity",  data=np.array([vcd[m]["intensity"]  for m in modes], dtype=float))
 
 
 def write_normal_modes(f: h5py.File, p: OrcaOutputParser):
@@ -356,7 +366,7 @@ def write_frontier_orbitals(f: h5py.File, p: OrcaOutputParser):
         pop = info.get("population", {})
         if pop:
             pg = grp.require_group(f"{key}_population")
-            indices = sorted(pop.keys())
+            indices  = sorted(pop.keys())
             pg.create_dataset("atom_index", data=np.array(indices, dtype=np.int32))
             pg.create_dataset("element",    data=_string_array([pop[i]["element"]  for i in indices]))
             pg.create_dataset("mulliken",   data=np.array([pop[i]["Mulliken"] for i in indices], dtype=float))
@@ -464,10 +474,22 @@ def write_hessian(f: h5py.File, hp: OrcaHessParser):
 # Main converter
 # ============================================================
 
-def convert_calculation(out_file: Path, hess_file: Path | None, output_dir: Path):
-    stem = out_file.stem
-    h5_path = output_dir / f"{stem}.h5"
+def convert_calculation(out_file: Path, hess_file: Path | None,
+                        output_dir: Path, h5_stem: str):
+    """
+    Parse *out_file* (and optionally *hess_file*) and write
+    ``output_dir/<h5_stem>.h5``.
 
+    Parameters
+    ----------
+    out_file   : path to the ORCA .out file
+    hess_file  : path to the matching .hess file, or None
+    output_dir : directory in which to place the HDF5 file
+    h5_stem    : basename for the HDF5 file (without extension)
+                 — this is the parent folder name, e.g.
+                   "ZZYASVWWDLJXIM-UHFFFAOYSA-N"
+    """
+    h5_path = output_dir / f"{h5_stem}.h5"
     log.info("Converting %s → %s", out_file.name, h5_path.name)
 
     p = OrcaOutputParser(str(out_file))
@@ -476,6 +498,7 @@ def convert_calculation(out_file: Path, hess_file: Path | None, output_dir: Path
         f.attrs["source_out"]  = str(out_file)
         f.attrs["source_hess"] = str(hess_file) if hess_file else ""
         f.attrs["orca_parser_version"] = "1.0"
+        f.attrs["calculation_id"] = h5_stem
 
         write_metadata(f, p)
         write_geometry(f, p)
@@ -499,20 +522,89 @@ def convert_calculation(out_file: Path, hess_file: Path | None, output_dir: Path
     return h5_path
 
 
+# Files whose stems end with these suffixes are never treated as ORCA output
+_EXCLUDED_SUFFIXES = ("_slurm", "_trj")
+_EXCLUDED_EXTENSIONS = {".log"}   # also skip bare .log files
+
+
+def _is_excluded(path: Path) -> bool:
+    """Return True if *path* should be ignored."""
+    if path.suffix in _EXCLUDED_EXTENSIONS:
+        return True
+    for suffix in _EXCLUDED_SUFFIXES:
+        if path.stem.endswith(suffix):
+            return True
+    return False
+
+
 def find_calculations(search_dir: Path) -> dict[str, dict]:
     """
-    Scan *search_dir* recursively and group .out / .hess files by stem.
-    Returns {stem: {"out": Path, "hess": Path | None}}.
-    """
-    out_files  = {p.stem: p for p in search_dir.rglob("*.out")}
-    hess_files = {p.stem: p for p in search_dir.rglob("*.hess")}
+    Scan *search_dir* for ORCA calculations.
 
-    calcs = {}
-    for stem, out_path in out_files.items():
-        calcs[stem] = {
-            "out":  out_path,
-            "hess": hess_files.get(stem),
+    Strategy
+    --------
+    Each immediate sub-directory is treated as one calculation; its name
+    becomes the HDF5 stem.  Inside the sub-directory we look for a
+    single ``.out`` file (excluding slurm/log variants) and an optional
+    ``.hess`` file with the same stem.
+
+    If *search_dir* itself contains .out files directly (no sub-folders),
+    those are collected as individual calculations named after their stem.
+
+    Returns
+    -------
+    dict mapping h5_stem → {"out": Path, "hess": Path|None, "h5_stem": str}
+    """
+    calcs: dict[str, dict] = {}
+
+    # ── per-subfolder mode ──────────────────────────────────────────────
+    subdirs = [d for d in search_dir.iterdir() if d.is_dir()]
+    for subdir in subdirs:
+        h5_stem = subdir.name          # e.g. ZZYASVWWDLJXIM-UHFFFAOYSA-N
+
+        # collect .out files in this folder (non-recursive, no slurm)
+        out_candidates = [
+            f for f in subdir.glob("*.out")
+            if not _is_excluded(f)
+        ]
+
+        if not out_candidates:
+            log.debug("No .out file found in %s — skipping", subdir.name)
+            continue
+        if len(out_candidates) > 1:
+            log.warning(
+                "Multiple .out files in %s: %s — using %s",
+                subdir.name,
+                [f.name for f in out_candidates],
+                out_candidates[0].name,
+            )
+
+        out_file = out_candidates[0]
+
+        # look for a matching .hess (same stem as the .out)
+        hess_file = out_file.with_suffix(".hess")
+        if not hess_file.exists():
+            hess_file = None
+
+        calcs[h5_stem] = {
+            "out":     out_file,
+            "hess":    hess_file,
+            "h5_stem": h5_stem,
         }
+
+    # ── flat mode (no sub-directories, or search_dir itself has .out files) ─
+    if not calcs:
+        for out_file in search_dir.glob("*.out"):
+            if _is_excluded(out_file):
+                continue
+            h5_stem = out_file.stem
+            hess_file = out_file.with_suffix(".hess")
+            calcs[h5_stem] = {
+                "out":     out_file,
+                "hess":    hess_file if hess_file.exists() else None,
+                "h5_stem": h5_stem,
+            }
+
     return calcs
 
 
@@ -545,7 +637,7 @@ def main():
     ok, failed = 0, []
     for stem, paths in calcs.items():
         try:
-            convert_calculation(paths["out"], paths["hess"], output_dir)
+            convert_calculation(paths["out"], paths["hess"], output_dir, paths["h5_stem"])
             ok += 1
         except Exception as exc:
             log.error("FAILED %s: %s", stem, exc, exc_info=args.verbose)
