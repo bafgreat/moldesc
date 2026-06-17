@@ -109,7 +109,7 @@ import numpy as np
 # ---------------------------------------------------------------------------
 # Adjust this import to wherever your parsers actually live
 # ---------------------------------------------------------------------------
-from orca_parser import OrcaOutputParser, OrcaHessParser   # ← change if needed
+from moldesc.orca_parser.parse_output import OrcaOutputParser, OrcaHessParser   # ← change if needed
 
 log = logging.getLogger(__name__)
 
