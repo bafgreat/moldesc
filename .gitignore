@@ -11,3 +11,6 @@ wheels/
 .history/
 .python-version
 uv.lock
+.vscode/
+ARCHITECTURE.md
+tests/data/BNZIACLQJHGMLH-MRVPVSSYSA-N.hdf5

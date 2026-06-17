@@ -1,0 +1,2224 @@
+{"smart_search": {
+  "carboxylate": "[CX3](=O)[O-]",
+  "anhydride": "[CX3](=O)O[CX3](=O)",
+  "acid_chloride": "[CX3](=O)Cl",
+  "quinone": "O=C1C=CC(=O)C=C1",
+  "hydroxamate": "[CX3](=O)[NX3][OX2H]",
+  "thiolate": "[S-]",
+  "disulfide": "[SX2][SX2]",
+  "sulfoxide": "[SX3](=O)([#6])[#6]",
+  "sulfonic_acid": "[SX4](=O)(=O)([OX2H])[#6]",
+  "sulfonate": "[SX4](=O)(=O)([O-])[#6]",
+  "thiocarbonyl": "[CX3]=S",
+  "thioamide": "[NX3][CX3](=S)[#6]",
+  "thiourea": "NC(=S)N",
+  "phosphonic_acid": "[PX4](=O)([OX2H])([OX2H])",
+  "phosphonate": "[PX4](=O)([O-])([OX2H,OX1-])",
+  "phosphate": "[PX4](=O)(O)(O)O",
+  "phosphine": "[PX3]([#6])([#6])[#6]",
+  "phosphine_oxide": "[PX4](=O)([#6])([#6])[#6]",
+  "boronic_acid": "[BX3]([OX2H])([OX2H])",
+  "boronate_ester": "[BX3]([OX2][#6])([OX2][#6])",
+  "silane": "[SiH]",
+  "siloxane": "[Si][O][Si]",
+  "fluoro": "[F]",
+  "chloro": "[Cl]",
+  "bromo": "[Br]",
+  "iodo": "[I]",
+  "alkene": "[CX3]=[CX3]",
+  "alkyne": "[CX2]#[CX2]",
+  "biphenyl": "c1ccccc1-c2ccccc2",
+  "terphenyl": "c1ccccc1-c2ccc(-c3ccccc3)cc2",
+  "pyrimidine": "n1ccncc1",
+  "pyrazine": "n1ccncc1",
+  "pyridazine": "n1ncccc1",
+  "triazine": "n1cncnc1",
+  "imidazolate": "c1ncc[n-]1",
+  "benzimidazole": "c1ccc2[nH]cnc2c1",
+  "pyrazole": "c1[nH]ncc1",
+  "pyrazolate": "c1[n-]ncc1",
+  "triazole": "n1nccn1",
+  "triazolate": "n1ncc[n-]1",
+  "tetrazolate": "c1nnn[n-]1",
+  "isoxazole": "o1nccc1",
+  "isothiazole": "s1nccc1",
+  "quinoline": "n1cccc2ccccc12",
+  "isoquinoline": "c1ccc2cnccc2c1",
+  "phenanthroline": "n1ccc2cc3cccnc3cc2c1",
+  "bipyridine": "n1ccccc1-c2ccccn2",
+  "terpyridine": "n1ccccc1-c2cccc(-c3ccccn3)n2",
+  "benzofuran": "o1ccc2ccccc12",
+  "benzothiophene": "s1ccc2ccccc12",
+  "pyridinium": "[n+1]1ccccc1",
+  "imidazolium": "[n+]1cc[nH]c1",
+  "sulfonium": "[SX3+]",
+  "phosphonium": "[PX4+]",
+  "peroxide": "[OX2][OX2]",
+  "beta_diketone": "[CX3](=O)[CH2,CH1][CX3](=O)",
+  "acetylacetonate_like": "[CX3](=O)[CH-][CX3](=O)",
+  "salicylaldehyde": "c1ccc([CX3H1]=O)c([OX2H])c1",
+  "salen_like": "[CX3]=[NX2][#6]~[#6][OX2H]",
+  "diimine": "[NX2]=[CX3][#6][CX3]=[NX2]",
+  "dicarboxylate": "[CX3](=O)[OX1-,OX2H1].[CX3](=O)[OX1-,OX2H1]",
+  "hydroxy_carboxylate": "[OX2H].[CX3](=O)[OX1-,OX2H1]",
+  "amino_carboxylate": "[NX3].[CX3](=O)[OX1-,OX2H1]",
+  "amidoxime": "N=C(N)NO",
+  "catechol": "c1c([OX2H])c([OX2H])ccc1",
+  "resorcinol": "c1c([OX2H])cc([OX2H])cc1",
+  "hydroquinone": "c1cc([OX2H])ccc1[OX2H]",
+  "oxamate_like": "NC(=O)C(=O)[O-,OH]",
+  "hydrazide": "[NX3][NX3][CX3](=O)",
+  "aromatic_ring": "a1aaaaa1",
+  "zwitterion": "[+]-[*]",
+  "carbonate_ester": "[OX2][CX3](=O)[OX2]",
+  "carbamate": "[NX3][CX3](=O)[OX2]",
+  "carbamic_acid": "[NX3][CX3](=O)[OX2H]",
+  "hemiaminal": "[CX4]([OX2H])[NX3]",
+  "hemiketal": "[CX4]([OX2H])([OX2][#6])[#6]",
+  "acetal": "[CX4]([OX2][#6])[OX2][#6]",
+  "orthoester": "[CX4]([OX2][#6])([OX2][#6])[OX2][#6]",
+  "enol": "[CX3]=[CX3][OX2H]",
+  "enol_ether": "[CX3]=[CX3][OX2][#6]",
+  "vinyl_halide": "[CX3]=[CX3][F,Cl,Br,I]",
+  "allyl_halide": "[CX3]=[CX3][CX4][F,Cl,Br,I]",
+  "alpha_halo_carbonyl": "[CX4][F,Cl,Br,I][CX3](=O)",
+  "michael_acceptor": "[CX3]=[CX3][CX3](=O)",
+  "maleimide": "O=C1C=CC(=O)N1",
+  "succinimide": "O=C1CCC(=O)N1",
+  "phthalimide": "O=C1c2ccccc2C(=O)N1",
+  "beta_lactam": "O=C1CCN1",
+  "sultam": "O=S1(=O)NCC1",
+  "sultone": "O=S1(=O)OCC1",
+  "dioxolane": "C1OCCO1",
+  "crown_ether_fragment": "[OX2][CX4][CX4][OX2]",
+  "cryptand_fragment": "N([CX4][CX4][OX2])[CX4][CX4][OX2]",
+  "amino_acid_backbone": "[NX3][CX4][CX3](=O)[OX2H,OX1-]",
+  "peptide_bond": "[NX3][CX3](=O)[CX4][NX3]",
+  "nucleobase_purine": "c1ncnc2[nH]cnc12",
+  "nucleobase_pyrimidine_like": "O=c1[nH]ccn1",
+  "catecholate": "c1c([O-])c([O-])ccc1",
+  "semiquinone": "O=C1C=CC(=O)C=C1",
+  "phenolate": "c[O-]",
+  "alkoxide": "[CX4][O-]",
+  "enolate": "[CX3]=[CX3][O-]",
+  "thiocarbamate": "[NX3][CX3](=S)[OX2]",
+  "dithiocarbamate": "[NX3][CX3](=S)[S-,SH]",
+  "xanthate": "[OX2][CX3](=S)[S-,SH]",
+  "trithiocarbonate": "[SX2][CX3](=S)[SX2]",
+  "phosphoramide": "[PX4](=O)(N)(N)",
+  "phosphoramidate": "[PX4](=O)(N)[OX2][#6]",
+  "thiophosphate": "[PX4](=S)(O)(O)O",
+  "arsenic_acid": "[AsX4](=O)(O)(O)",
+  "selenol": "[SeH]",
+  "selenide": "[Se]([#6])[#6]",
+  "diselenide": "[Se][Se]",
+  "selenoxide": "[SeX3](=O)",
+  "telluride": "[Te]([#6])[#6]",
+  "metal_binding_NNO": "[NX2,NX3]~[#6]~[NX2,NX3]~[#6]~[OX2H,OX1-]",
+  "metal_binding_ONO": "[OX2H,OX1-]~[#6]~[NX2,NX3]~[#6]~[OX2H,OX1-]",
+  "metal_binding_NNN": "[NX2,NX3]~[#6]~[NX2,NX3]~[#6]~[NX2,NX3]",
+  "porphyrin_fragment": "c1cc2cc3cccnc3cc3cccnc3c2n1",
+  "macrocycle_fragment": "[r14,r15,r16,r17,r18,r19,r20]",
+  "rotaxane_stopper": "C(C)(C)(c1ccccc1)c1ccccc1",
+  "catenane_fragment": "C1CCOCCOCCOCCO1",
+  "fluorophore_coumarin": "O=c1ccc2ccccc2o1",
+  "fluorophore_naphthalimide": "O=C1c2cccc3cccc(c23)C(=O)N1",
+  "spin_label_nitroxide": "[NX3]([OX1])",
+  "radical_trap_tempo": "C1(C)(C)N([O])C(C)(C)CC1",
+  "photoswitch_azobenzene": "c1ccc(/N=N/c2ccccc2)cc1",
+  "photoswitch_diarylethene": "c1cc(-c2cccs2)cs1",
+  "redox_ferrocene_like": "[Fe]",
+  "cage_compound": "[r3,r4]~[r3,r4]",
+  "cucurbituril_fragment": "N1CN2C(=O)N1C(=O)N2",
+  "cyclodextrin_fragment": "[OX2][CX4]1[CX4][OX2][CX4]([OX2H])[CX4]([OX2H])[CX4]1[OX2H]",
+  "carboxylic_acid": "[CX3](=O)[OX2H1]",
+  "carboxylate_or_acid": "[CX3](=O)[OX1-,OX2H1]",
+  "ester": "[CX3](=O)[OX2][#6]",
+  "amide": "[NX3][CX3](=O)[#6]",
+  "imide": "[NX3]([CX3](=O))[CX3](=O)",
+  "aldehyde": "[CX3H1](=O)[#6]",
+  "ketone": "[#6][CX3](=O)[#6]",
+  "amine_primary": "[NX3;H2;!$(NC=O)]",
+  "amine_secondary": "[NX3;H1;!$(NC=O)]",
+  "amine_tertiary": "[NX3;H0;!$(NC=O)]",
+  "aromatic_amine": "[NX3][c]",
+  "aniline": "c[NX3;H2,H1,H0]",
+  "imine": "[CX3]=[NX2]",
+  "oxime": "[CX3]=[NX2][OX2H]",
+  "hydrazone": "[CX3]=[NX2][NX3]",
+  "azide": "[$([NX2-][NX2+]#[NX1]),$([NX1]=[NX2+]=[NX1-])]",
+  "azo": "[NX2]=[NX2]",
+  "nitro": "[$([NX3+](=O)[O-]),$([NX3](=O)=O)]",
+  "nitrile": "[CX2]#N",
+  "isocyanate": "N=C=O",
+  "isothiocyanate": "N=C=S",
+  "urea": "NC(=O)N",
+  "guanidine": "NC(=N)N",
+  "alcohol": "[CX4][OX2H]",
+  "phenol": "c[OX2H]",
+  "ether": "[OD2]([#6])[#6]",
+  "epoxide": "C1OC1",
+  "thiol": "[SX2H]",
+  "thioether": "[SX2]([#6])[#6]",
+  "sulfone": "[SX4](=O)(=O)([#6])[#6]",
+  "sulfonamide": "[SX4](=O)(=O)(N)[#6]",
+  "alkyl_halide": "[CX4][F,Cl,Br,I]",
+  "aryl_halide": "c[F,Cl,Br,I]",
+  "halogen": "[F,Cl,Br,I]",
+  "benzene": "c1ccccc1",
+  "furan": "o1cccc1",
+  "thiophene": "s1cccc1",
+  "thiazole": "s1ccnc1",
+  "imidazole": "c1ncc[nH]1",
+  "oxazole": "o1ccnc1",
+  "pyridine": "n1ccccc1",
+  "tetrazole": "c1nnn[nH]1",
+  "lactone": "O=C1OCC1"
+},
+
+ "labels": {
+     "MaxAbsEStateIndex": {
+        "label": "Maximum Absolute Electrotopological State Index",
+        "description": "The largest absolute value of the atomic Electrotopological State (E-State) indices in the molecule."
+    },
+     "MaxEStateIndex": {
+        "label": "Maximum Electrotopological State Index",
+        "description": "The highest, most positive, atomic Electrotopological State index in the molecule."
+    },
+    "MinAbsEStateIndex": {
+        "label": "Minimum Absolute Electrotopological State Index",
+        "description": "The smallest absolute value of the atomic Electrotopological State indices in the molecule."
+    },
+    "MinEStateIndex": {
+        "label": "Minimum Electrotopological State Index",
+        "description": "The lowest atomic Electrotopological State index in the molecule (can be negative for some molecules)."
+    },
+    "FpDensityMorgan1": {
+        "label": "Morgan Fingerprint Density (Radius 1)",
+        "description": "The number of non-zero bits in the Morgan fingerprint with radius 1 divided by the number of heavy atoms. It measures the density of unique local atomic environments at radius 1."
+    },
+    "FpDensityMorgan2": {
+        "label": "Morgan Fingerprint Density (Radius 2)",
+        "description": "The number of non-zero bits in the Morgan fingerprint with radius 2 divided by the number of heavy atoms. It reflects the structural diversity of atomic environments extending up to two bonds."
+    },
+    "FpDensityMorgan3": {
+        "label": "Morgan Fingerprint Density (Radius 3)",
+        "description": "The number of non-zero bits in the Morgan fingerprint with radius 3 divided by the number of heavy atoms. It characterizes the complexity of larger local structural environments within the molecule."
+    },
+
+    "BCUT2D_MWHI": {
+        "label": "Highest BCUT Eigenvalue Weighted by Atomic Mass",
+        "description": "The largest eigenvalue of the two-dimensional BCUT matrix constructed using atomic masses as atom weights. It reflects the distribution of heavy atoms within the molecular topology."
+    },
+    "BCUT2D_MWLOW": {
+        "label": "Lowest BCUT Eigenvalue Weighted by Atomic Mass",
+        "description": "The smallest eigenvalue of the two-dimensional BCUT matrix constructed using atomic masses as atom weights. It describes the lower bound of the mass-weighted topological distribution."
+    },
+
+    "BCUT2D_CHGHI": {
+        "label": "Highest BCUT Eigenvalue Weighted by Atomic Partial Charge",
+        "description": "The largest eigenvalue of the two-dimensional BCUT matrix constructed using atomic partial charges as atom weights. It captures the upper extent of the molecular charge distribution."
+    },
+    "BCUT2D_CHGLO": {
+        "label": "Lowest BCUT Eigenvalue Weighted by Atomic Partial Charge",
+        "description": "The smallest eigenvalue of the two-dimensional BCUT matrix constructed using atomic partial charges as atom weights. It represents the lower extent of the molecular charge distribution."
+    },
+
+    "BCUT2D_LOGPHI": {
+        "label": "Highest BCUT Eigenvalue Weighted by Atomic LogP Contribution",
+        "description": "The largest eigenvalue of the two-dimensional BCUT matrix weighted by atomic Wildman–Crippen LogP contributions. It reflects the distribution of hydrophobic character across the molecular graph."
+    },
+    "BCUT2D_LOGPLOW": {
+        "label": "Lowest BCUT Eigenvalue Weighted by Atomic LogP Contribution",
+        "description": "The smallest eigenvalue of the two-dimensional BCUT matrix weighted by atomic Wildman–Crippen LogP contributions. It characterizes the lower bound of hydrophobicity distribution within the molecule."
+    },
+
+    "BCUT2D_MRHI": {
+        "label": "Highest BCUT Eigenvalue Weighted by Atomic Molar Refractivity Contribution",
+        "description": "The largest eigenvalue of the two-dimensional BCUT matrix weighted by atomic Wildman–Crippen molar refractivity contributions. It describes the upper extent of molecular polarizability distribution."
+    },
+    "BCUT2D_MRLOW": {
+        "label": "Lowest BCUT Eigenvalue Weighted by Atomic Molar Refractivity Contribution",
+        "description": "The smallest eigenvalue of the two-dimensional BCUT matrix weighted by atomic Wildman–Crippen molar refractivity contributions. It reflects the lower extent of molecular polarizability distribution."
+    },
+
+    "AvgIpc": {
+        "label": "Average Information Content",
+        "description": "The average graph information content (IPC) of the molecular topology. It quantifies the average structural complexity and symmetry of the molecular graph based on information theory."
+    },
+    "MolWt": {
+        "label": "Molecular weight",
+        "description": "Average molecular weight calculated from naturally occurring isotopes."
+    },
+
+    "ExactMolWt": {
+        "label": "Exact molecular weight",
+        "description": "Monoisotopic molecular weight calculated using the most abundant isotope of each element."
+    },
+
+    "HeavyAtomMolWt": {
+        "label": "Heavy atom molecular weight",
+        "description": "Molecular weight excluding hydrogen atoms."
+    },
+
+    "TPSA": {
+        "label": "Topological polar surface area",
+        "description": "Surface area contributed by polar atoms (typically oxygen, nitrogen, sulfur, phosphorus)."
+    },
+
+    "MolLogP": {
+        "label": "Octanol-water partition coefficient (LogP)",
+        "description": "Predicted lipophilicity of the molecule."
+    },
+
+    "MolMR": {
+        "label": "Molar refractivity",
+        "description": "Estimate of molecular polarizability based on atomic contributions."
+    },
+
+    "FractionCSP3": {
+        "label": "Fraction of sp³ carbon atoms",
+        "description": "Fraction of carbon atoms that are sp³ hybridized."
+    },
+
+    "NumHAcceptors": {
+        "label": "Hydrogen-bond acceptors",
+        "description": "Number of atoms capable of accepting hydrogen bonds."
+    },
+
+    "NumHDonors": {
+        "label": "Hydrogen-bond donors",
+        "description": "Number of atoms capable of donating hydrogen bonds."
+    },
+
+    "NumRotatableBonds": {
+        "label": "Rotatable bonds",
+        "description": "Number of freely rotatable single bonds."
+    },
+
+    "NumHeteroatoms": {
+        "label": "Heteroatoms",
+        "description": "Number of non-carbon and non-hydrogen atoms."
+    },
+
+    "NumRings": {
+        "label": "Ring count",
+        "description": "Total number of rings in the molecule."
+    },
+
+    "NumAromaticRings": {
+        "label": "Aromatic rings",
+        "description": "Number of aromatic rings."
+    },
+
+    "NumAliphaticRings": {
+        "label": "Aliphatic rings",
+        "description": "Number of non-aromatic rings."
+    },
+
+    "NumSaturatedRings": {
+        "label": "Saturated rings",
+        "description": "Number of fully saturated rings."
+    },
+
+    "NumAromaticHeterocycles": {
+        "label": "Aromatic heterocycles",
+        "description": "Number of aromatic rings containing heteroatoms."
+    },
+
+    "NumAliphaticHeterocycles": {
+        "label": "Aliphatic heterocycles",
+        "description": "Number of non-aromatic heterocyclic rings."
+    },
+
+    "NumSaturatedHeterocycles": {
+        "label": "Saturated heterocycles",
+        "description": "Number of saturated heterocyclic rings."
+    },
+
+    "NumAmideBonds": {
+        "label": "Amide bonds",
+        "description": "Number of amide functional groups."
+    },
+
+    "HeavyAtomCount": {
+        "label": "Heavy atoms",
+        "description": "Number of atoms excluding hydrogen."
+    },
+
+    "NumValenceElectrons": {
+        "label": "Valence electrons",
+        "description": "Total number of valence electrons."
+    },
+
+    "NumRadicalElectrons": {
+        "label": "Radical electrons",
+        "description": "Number of unpaired electrons."
+    },
+
+    "FormalCharge": {
+        "label": "Formal charge",
+        "description": "Net formal charge on the molecule."
+    },
+
+    "qed": {
+        "label": "Drug-likeness score (QED)",
+        "description": "Quantitative Estimate of Drug-likeness based on medicinal chemistry properties."
+    },
+
+    "SPS": {
+        "label": "Spacial score (SPS)",
+        "description": "Measure of three-dimensional molecular complexity."
+    },
+
+    "LabuteASA": {
+        "label": "Approximate surface area",
+        "description": "Labute approximation of solvent-accessible surface area."
+    },
+
+    "BalabanJ": {
+        "label": "Balaban connectivity index",
+        "description": "Topological descriptor describing molecular connectivity."
+    },
+
+    "BertzCT": {
+        "label": "Bertz molecular complexity",
+        "description": "Graph-theoretical measure of molecular complexity."
+    },
+
+    "HallKierAlpha": {
+        "label": "Hall-Kier alpha index",
+        "description": "Correction factor used in molecular connectivity indices."
+    },
+
+    "Kappa1": {
+        "label": "First kappa shape index",
+        "description": "Molecular shape descriptor measuring linearity."
+    },
+
+    "Kappa2": {
+        "label": "Second kappa shape index",
+        "description": "Molecular shape descriptor measuring branching."
+    },
+
+  "SMR_VSA2": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 2)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the second predefined molar refractivity interval."
+  },
+  "SMR_VSA3": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 3)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the third predefined molar refractivity interval."
+  },
+  "SMR_VSA4": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 4)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the fourth predefined molar refractivity interval."
+  },
+  "SMR_VSA5": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 5)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the fifth predefined molar refractivity interval."
+  },
+  "SMR_VSA6": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 6)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the sixth predefined molar refractivity interval."
+  },
+  "SMR_VSA7": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 7)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the seventh predefined molar refractivity interval."
+  },
+  "SMR_VSA8": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 8)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the eighth predefined molar refractivity interval."
+  },
+  "SMR_VSA9": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 9)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the ninth predefined molar refractivity interval."
+  },
+  "SMR_VSA10": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 10)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the tenth predefined molar refractivity interval."
+  },
+
+  "SlogP_VSA2": {
+    "label": "LogP van der Waals Surface Area (Bin 2)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the second predefined hydrophobicity interval."
+  },
+  "SlogP_VSA3": {
+    "label": "LogP van der Waals Surface Area (Bin 3)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the third predefined hydrophobicity interval."
+  },
+  "SlogP_VSA4": {
+    "label": "LogP van der Waals Surface Area (Bin 4)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the fourth predefined hydrophobicity interval."
+  },
+  "SlogP_VSA5": {
+    "label": "LogP van der Waals Surface Area (Bin 5)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the fifth predefined hydrophobicity interval."
+  },
+  "SlogP_VSA6": {
+    "label": "LogP van der Waals Surface Area (Bin 6)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the sixth predefined hydrophobicity interval."
+  },
+  "SlogP_VSA7": {
+    "label": "LogP van der Waals Surface Area (Bin 7)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the seventh predefined hydrophobicity interval."
+  },
+  "SlogP_VSA8": {
+    "label": "LogP van der Waals Surface Area (Bin 8)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the eighth predefined hydrophobicity interval."
+  },
+  "SlogP_VSA9": {
+    "label": "LogP van der Waals Surface Area (Bin 9)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the ninth predefined hydrophobicity interval."
+  },
+  "SlogP_VSA10": {
+    "label": "LogP van der Waals Surface Area (Bin 10)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the tenth predefined hydrophobicity interval."
+  },
+  "SlogP_VSA11": {
+    "label": "LogP van der Waals Surface Area (Bin 11)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the eleventh predefined hydrophobicity interval."
+  },
+  "SlogP_VSA12": {
+    "label": "LogP van der Waals Surface Area (Bin 12)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen LogP contributions fall within the twelfth predefined hydrophobicity interval."
+  },
+
+    "Kappa3": {
+        "label": "Third kappa shape index",
+        "description": "Molecular shape descriptor describing molecular shape complexity."
+    },
+
+    "Chi0n": {
+        "label": "Zeroth-Order Molecular Connectivity Chi Index (Normal)",
+        "description": "The zeroth-order molecular connectivity index calculated using the normal atomic connectivity values. It quantifies molecular branching without considering valence corrections."
+    },
+
+    "Chi0v": {
+        "label": "Zeroth-Order Molecular Connectivity Chi Index (Valence)",
+        "description": "The zeroth-order molecular connectivity index calculated using valence connectivity values. It incorporates atomic valence information into the connectivity calculation."
+    },
+
+    "Chi1n": {
+        "label": "First-Order Molecular Connectivity Chi Index (Normal)",
+        "description": "The first-order molecular connectivity index based on normal atomic connectivity values. It characterizes connectivity between directly bonded atoms."
+    },
+
+    "Chi1v": {
+        "label": "First-Order Molecular Connectivity Chi Index (Valence)",
+        "description": "The first-order molecular connectivity index calculated using valence connectivity values, reflecting both bonding topology and atomic valence."
+    },
+
+    "Chi2n": {
+        "label": "Second-Order Molecular Connectivity Chi Index (Normal)",
+        "description": "The second-order molecular connectivity index based on paths of length two using normal atomic connectivity values."
+    },
+
+    "Chi3n": {
+        "label": "Third-Order Molecular Connectivity Chi Index (Normal)",
+        "description": "The third-order molecular connectivity index based on paths of length three using normal atomic connectivity values."
+    },
+
+    "Chi4n": {
+        "label": "Fourth-Order Molecular Connectivity Chi Index (Normal)",
+        "description": "The fourth-order molecular connectivity index based on paths of length four using normal atomic connectivity values."
+    },
+    "EState_VSA1": {
+    "label": "Electrotopological State Surface Area (Bin 1)",
+    "description": "Total van der Waals surface area of atoms whose Electrotopological State (E-State) values fall within the first predefined E-State interval."
+  },
+  "EState_VSA2": {
+    "label": "Electrotopological State Surface Area (Bin 2)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the second predefined E-State interval."
+  },
+  "EState_VSA3": {
+    "label": "Electrotopological State Surface Area (Bin 3)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the third predefined E-State interval."
+  },
+  "EState_VSA4": {
+    "label": "Electrotopological State Surface Area (Bin 4)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the fourth predefined E-State interval."
+  },
+  "EState_VSA5": {
+    "label": "Electrotopological State Surface Area (Bin 5)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the fifth predefined E-State interval."
+  },
+  "EState_VSA6": {
+    "label": "Electrotopological State Surface Area (Bin 6)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the sixth predefined E-State interval."
+  },
+  "EState_VSA7": {
+    "label": "Electrotopological State Surface Area (Bin 7)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the seventh predefined E-State interval."
+  },
+  "EState_VSA8": {
+    "label": "Electrotopological State Surface Area (Bin 8)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the eighth predefined E-State interval."
+  },
+  "EState_VSA9": {
+    "label": "Electrotopological State Surface Area (Bin 9)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the ninth predefined E-State interval."
+
+  },
+  "EState_VSA10": {
+    "label": "Electrotopological State Surface Area (Bin 10)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the tenth predefined E-State interval."
+
+  },
+  "EState_VSA11": {
+    "label": "Electrotopological State Surface Area (Bin 11)",
+    "description": "Total van der Waals surface area of atoms whose E-State values fall within the eleventh predefined E-State interval."
+
+  },
+
+  "VSA_EState1": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 1)",
+    "description": "Sum of the Electrotopological State (E-State) indices of atoms whose van der Waals surface areas fall within the first predefined surface-area interval."
+
+  },
+  "VSA_EState2": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 2)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the second predefined surface-area interval."
+
+  },
+  "VSA_EState3": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 3)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the third predefined surface-area interval."
+
+  },
+  "VSA_EState4": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 4)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the fourth predefined surface-area interval."
+
+  },
+  "VSA_EState5": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 5)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the fifth predefined surface-area interval."
+
+  },
+  "VSA_EState6": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 6)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the sixth predefined surface-area interval."
+
+  },
+  "VSA_EState7": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 7)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the seventh predefined surface-area interval."
+
+  },
+  "VSA_EState8": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 8)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the eighth predefined surface-area interval."
+
+  },
+  "VSA_EState9": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 9)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the ninth predefined surface-area interval."
+
+  },
+  "VSA_EState10": {
+    "label": "Electrotopological State Sum for van der Waals Surface Area (Bin 10)",
+    "description": "Sum of the E-State indices of atoms whose van der Waals surface areas fall within the tenth predefined surface-area interval."
+
+  },
+
+  "PEOE_VSA1": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 1)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges (PEOE) fall within the first predefined charge interval."
+
+  },
+  "PEOE_VSA2": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 2)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the second predefined charge interval."
+
+  },
+  "PEOE_VSA3": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 3)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the third predefined charge interval."
+
+  },
+  "PEOE_VSA4": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 4)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the fourth predefined charge interval."
+
+  },
+  "PEOE_VSA5": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 5)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the fifth predefined charge interval."
+
+  },
+  "PEOE_VSA6": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 6)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the sixth predefined charge interval."
+
+  },
+  "PEOE_VSA7": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 7)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the seventh predefined charge interval."
+
+  },
+  "PEOE_VSA8": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 8)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the eighth predefined charge interval."
+
+  },
+  "PEOE_VSA9": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 9)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the ninth predefined charge interval."
+
+  },
+  "PEOE_VSA10": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 10)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the tenth predefined charge interval."
+
+  },
+  "PEOE_VSA11": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 11)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the eleventh predefined charge interval."
+
+  },
+  "PEOE_VSA12": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 12)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the twelfth predefined charge interval."
+
+  },
+  "PEOE_VSA13": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 13)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the thirteenth predefined charge interval."
+
+  },
+  "PEOE_VSA14": {
+    "label": "Partial Charge van der Waals Surface Area (Bin 14)",
+    "description": "Total van der Waals surface area of atoms whose Gasteiger partial charges fall within the fourteenth predefined charge interval."
+
+  },
+
+  "SMR_VSA1": {
+    "label": "Molar Refractivity van der Waals Surface Area (Bin 1)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen molar refractivity contributions fall within the first predefined interval."
+  },
+
+  "SlogP_VSA1": {
+    "label": "LogP van der Waals Surface Area (Bin 1)",
+    "description": "Total van der Waals surface area of atoms whose Wildman–Crippen atomic LogP contributions fall within the first predefined hydrophobicity interval."
+
+  },
+    "Ipc": {
+        "label": "Information Content Index",
+        "description": "The graph information content of the molecular topology. It measures molecular complexity and symmetry using information theory."
+
+    },
+  "fr_Ar_OH": {
+    "label": "Number of Aromatic Hydroxyl Groups",
+    "description": "The number of aromatic hydroxyl (phenol) functional groups present in the molecule."
+
+  },
+
+  "fr_ether": {
+    "label": "Number of Ether Groups",
+    "description": "The number of ether functional groups (R–O–R') present in the molecule."
+
+  },
+
+  "NHOHCount": {
+    "label": "Number of NH and OH Groups",
+    "description": "The number of nitrogen-hydrogen and oxygen-hydrogen groups in the molecule."
+
+  },
+
+  "NOCount": {
+    "label": "Number of Nitrogen and Oxygen Atoms",
+    "description": "The total number of nitrogen and oxygen atoms in the molecule."
+
+  },
+
+  "NumAliphaticCarbocycles": {
+    "label": "Number of Aliphatic Carbocycles",
+    "description": "The number of non-aromatic carbon-only rings."
+
+  },
+
+  "NumAromaticCarbocycles": {
+    "label": "Number of Aromatic Carbocycles",
+    "description": "The number of aromatic carbon-only rings."
+
+  },
+
+  "NumAtomStereoCenters": {
+    "label": "Number of Atom Stereocenters",
+    "description": "The total number of stereogenic atoms."
+
+  },
+
+  "NumBridgeheadAtoms": {
+    "label": "Number of Bridgehead Atoms",
+    "description": "The number of bridgehead atoms shared between fused ring systems."
+
+  },
+
+  "NumSpiroAtoms": {
+    "label": "Number of Spiro Atoms",
+    "description": "The number of atoms shared by two rings through a single atom."
+
+  },
+
+  "NumUnspecifiedAtomStereoCenters": {
+    "label": "Number of Unspecified Atom Stereocenters",
+    "description": "The number of stereogenic atoms whose stereochemistry is unspecified."
+
+  },
+
+  "RingCount": {
+    "label": "Ring Count",
+    "description": "The total number of rings in the molecular graph."
+
+  },
+
+  "Phi": {
+    "label": "Kier Molecular Flexibility Index",
+    "description": "A molecular flexibility descriptor proposed by Kier that combines molecular size, branching, and cyclicity to estimate overall structural flexibility."
+
+  },
+
+    "MaxPartialCharge": {
+        "label": "Maximum partial atomic charge",
+        "description": "Largest computed Gasteiger partial atomic charge."
+
+    },
+
+    "MinPartialCharge": {
+        "label": "Minimum partial atomic charge",
+        "description": "Smallest computed Gasteiger partial atomic charge."
+
+    },
+
+    "MaxAbsPartialCharge": {
+        "label": "Maximum absolute partial charge",
+        "description": "Largest absolute value of atomic partial charge."
+
+    },
+
+    "MinAbsPartialCharge": {
+        "label": "Minimum absolute partial charge",
+        "description": "Smallest absolute value of atomic partial charge."
+
+    },
+    "NumHeterocycles": {
+        "label": "Number of Heterocyclic Rings",
+        "description": "Total count of ring systems containing at least one non-carbon atom (e.g. nitrogen, oxygen, sulfur). Includes both aromatic and non-aromatic heterocycles."
+    },
+        "NumSaturatedCarbocycles": {
+        "label": "Number of Saturated Carbocycles",
+        "description": "The number of fully saturated rings composed exclusively of carbon atoms. These rings contain no double bonds, no aromatic character, and no heteroatoms, such as cyclohexane-type rings."
+    },
+    "Chi0": {
+        "label": "Zeroth-Order Molecular Connectivity Index",
+        "description": "Sum of the reciprocal square roots of the atomic valence degrees for all heavy atoms. Encodes molecular size and atomic connectivity without considering bond topology."
+    },
+    "Chi1": {
+        "label": "First-Order Molecular Connectivity Index",
+        "description": "Sum of the reciprocal square roots of the products of atomic degree pairs across all bonds. Encodes information about directly bonded atom pairs and molecular branching."
+    },
+    "Chi2v": {
+        "label": "Second-Order Valence-Corrected Molecular Connectivity Index",
+        "description": "Second-order molecular connectivity index calculated using valence-corrected atomic degrees over all paths of length two. Incorporates heteroatom valence information into two-bond environment encoding."
+    },
+    "Chi3v": {
+        "label": "Third-Order Valence-Corrected Molecular Connectivity Index",
+        "description": "Third-order molecular connectivity index calculated using valence-corrected atomic degrees over all paths of length three. Sensitive to branching patterns and heteroatom placement within three-bond fragments."
+    },
+    "Chi4v": {
+        "label": "Fourth-Order Valence-Corrected Molecular Connectivity Index",
+        "description": "Fourth-order molecular connectivity index calculated using valence-corrected atomic degrees over all paths of length four. Reflects longer-range structural and electronic environment diversity."
+    },
+
+    "fr_Al_COO": {
+        "label": "Aliphatic carboxylic acid",
+        "description": "Number of aliphatic carboxylic acid groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_Al_OH": {
+        "label": "Aliphatic hydroxyl",
+        "description": "Number of aliphatic alcohol (-OH) groups.",
+        "category": "Oxygen Compounds"
+    },
+    "fr_Al_OH_noTert": {
+        "label": "Non-tertiary aliphatic hydroxyl",
+        "description": "Number of primary and secondary alcohol groups.",
+        "category": "Oxygen Compounds"
+    },
+    "fr_Ar_COO": {
+        "label": "Aromatic carboxylic acid",
+        "description": "Number of aromatic carboxylic acid groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_COO": {
+        "label": "Carboxylic acid",
+        "description": "Total number of carboxylic acid groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_COO2": {
+        "label": "Carboxylate",
+        "description": "Total number of carboxylate/carboxylic acid groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_ArN": {
+        "label": "Aromatic amine",
+        "description": "Number of aromatic amine groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_Ar_N": {
+        "label": "Aromatic nitrogen atom",
+        "description": "Number of aromatic nitrogen atoms in heterocycles.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_Ar_NH": {
+        "label": "Aromatic NH",
+        "description": "Number of aromatic nitrogen atoms bearing hydrogen.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_NH0": {
+        "label": "Tertiary amine",
+        "description": "Number of tertiary amine nitrogen atoms.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_NH1": {
+        "label": "Secondary amine",
+        "description": "Number of secondary amine nitrogen atoms.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_NH2": {
+        "label": "Primary amine",
+        "description": "Number of primary amine nitrogen atoms.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_N_O": {
+        "label": "N–O bond",
+        "description": "Number of nitrogen–oxygen bonds.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_Ndealkylation1": {
+        "label": "N-dealkylation site (type I)",
+        "description": "Potential metabolic N-dealkylation site.",
+        "category": "Metabolic Sites"
+    },
+    "fr_Ndealkylation2": {
+        "label": "N-dealkylation site (type II)",
+        "description": "Potential metabolic N-dealkylation site.",
+        "category": "Metabolic Sites"
+    },
+    "fr_Nhpyrrole": {
+        "label": "Pyrrolic nitrogen",
+        "description": "Number of pyrrole-like NH atoms.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_C_O": {
+        "label": "Carbonyl group",
+        "description": "Number of carbonyl (C=O) groups.",
+        "category": "Carbonyl Compounds"
+    },
+    "fr_C_O_noCOO": {
+        "label": "Non-carboxyl carbonyl",
+        "description": "Carbonyl groups excluding carboxylic acids and esters.",
+        "category": "Carbonyl Compounds"
+    },
+    "fr_HOCCN": {
+        "label": "Hydroxyethylamine motif",
+        "description": "Hydroxyl-carbon-carbon-nitrogen fragment.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_C_S": {
+        "label": "Carbon–sulfur bond",
+        "description": "Number of C–S bonds.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_SH": {
+        "label": "Thiol",
+        "description": "Number of thiol (-SH) groups.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_sulfide": {
+        "label": "Sulfide",
+        "description": "Number of thioether (sulfide) groups.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_sulfone": {
+        "label": "Sulfone",
+        "description": "Number of sulfone groups.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_sulfonamd": {
+        "label": "Sulfonamide",
+        "description": "Number of sulfonamide groups.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_halogen": {
+        "label": "Halogen atom",
+        "description": "Number of halogen substituents.",
+        "category": "Halogens"
+    },
+    "fr_alkyl_halide": {
+        "label": "Alkyl halide",
+        "description": "Number of alkyl halide groups.",
+        "category": "Halogens"
+    },
+    "fr_aldehyde": {
+        "label": "Aldehyde",
+        "description": "Number of aldehyde groups.",
+        "category": "Carbonyl Compounds"
+    },
+    "fr_ketone": {
+        "label": "Ketone",
+        "description": "Number of ketone groups.",
+        "category": "Carbonyl Compounds"
+    },
+    "fr_ketone_Topliss": {
+        "label": "Topliss ketone",
+        "description": "Ketone pattern used in Topliss medicinal chemistry rules.",
+        "category": "Metabolic Sites"
+    },
+    "fr_amide": {
+        "label": "Amide",
+        "description": "Number of amide groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_imide": {
+        "label": "Imide",
+        "description": "Number of imide groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_ester": {
+        "label": "Ester",
+        "description": "Number of ester groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_lactam": {
+        "label": "Lactam",
+        "description": "Number of cyclic amides.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_lactone": {
+        "label": "Lactone",
+        "description": "Number of cyclic esters.",
+        "category": "Oxygen Heterocycles"
+    },
+    "fr_benzene": {
+        "label": "Benzene ring",
+        "description": "Number of benzene rings.",
+        "category": "Aromatic Carbocycles"
+    },
+    "fr_bicyclic": {
+        "label": "Bicyclic system",
+        "description": "Number of bicyclic ring systems.",
+        "category": "Aromatic Carbocycles"
+    },
+    "fr_aryl_methyl": {
+        "label": "Aryl methyl",
+        "description": "Number of methyl groups attached to aromatic rings.",
+        "category": "Metabolic Sites"
+    },
+    "fr_furan": {
+        "label": "Furan ring",
+        "description": "Number of furan rings.",
+        "category": "Oxygen Heterocycles"
+    },
+    "fr_thiophene": {
+        "label": "Thiophene ring",
+        "description": "Number of thiophene rings.",
+        "category": "Sulfur Heterocycles"
+    },
+    "fr_thiazole": {
+        "label": "Thiazole ring",
+        "description": "Number of thiazole rings.",
+        "category": "Mixed Heteroatom Heterocycles"
+    },
+    "fr_imidazole": {
+        "label": "Imidazole ring",
+        "description": "Number of imidazole rings.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_oxazole": {
+        "label": "Oxazole ring",
+        "description": "Number of oxazole rings.",
+        "category": "Mixed Heteroatom Heterocycles"
+    },
+    "fr_pyridine": {
+        "label": "Pyridine ring",
+        "description": "Number of pyridine rings.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_morpholine": {
+        "label": "Morpholine ring",
+        "description": "Number of morpholine rings.",
+        "category": "Oxygen Heterocycles"
+    },
+    "fr_piperdine": {
+        "label": "Piperidine ring",
+        "description": "Number of piperidine rings.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_piperzine": {
+        "label": "Piperazine ring",
+        "description": "Number of piperazine rings.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_imine": {
+        "label": "Imine",
+        "description": "Number of imine (C=N) groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_amidine": {
+        "label": "Amidine",
+        "description": "Number of amidine groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_guanido": {
+        "label": "Guanidine",
+        "description": "Number of guanidine groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_azide": {
+        "label": "Azide",
+        "description": "Number of azide groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_azo": {
+        "label": "Azo",
+        "description": "Number of azo (-N=N-) groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_diazo": {
+        "label": "Diazo",
+        "description": "Number of diazo groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_hdrzine": {
+        "label": "Hydrazine",
+        "description": "Number of hydrazine groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_hdrzone": {
+        "label": "Hydrazone",
+        "description": "Number of hydrazone groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_isocyan": {
+        "label": "Isocyanate",
+        "description": "Number of isocyanate groups.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_isothiocyan": {
+        "label": "Isothiocyanate",
+        "description": "Number of isothiocyanate groups.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_nitrile": {
+        "label": "Nitrile",
+        "description": "Number of nitrile groups.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_nitro": {
+        "label": "Nitro",
+        "description": "Number of nitro groups.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_nitro_arom": {
+        "label": "Aromatic nitro",
+        "description": "Number of aromatic nitro groups.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_nitro_arom_nonortho": {
+        "label": "Aromatic nitro (non-ortho)",
+        "description": "Aromatic nitro groups not adjacent to another substituent.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_nitroso": {
+        "label": "Nitroso",
+        "description": "Number of nitroso groups.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_oxime": {
+        "label": "Oxime",
+        "description": "Number of oxime groups.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_quatN": {
+        "label": "Quaternary ammonium",
+        "description": "Number of quaternary ammonium centers.",
+        "category": "Charged Nitrogen Species"
+    },
+    "fr_tetrazole": {
+        "label": "Tetrazole ring",
+        "description": "Number of tetrazole rings.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_thiocyan": {
+        "label": "Thiocyanate",
+        "description": "Number of thiocyanate groups.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_term_acetylene": {
+        "label": "Terminal alkyne",
+        "description": "Number of terminal acetylene groups.",
+        "category": "Unsaturated Hydrocarbons"
+    },
+    "fr_unbrch_alkane": {
+        "label": "Unbranched alkane",
+        "description": "Presence of an unbranched alkane chain.",
+        "category": "Saturated Hydrocarbons"
+    },
+    "fr_para_hydroxylation": {
+        "label": "Para hydroxylation site",
+        "description": "Potential para-hydroxylation site used in medicinal chemistry.",
+        "category": "Metabolic Sites"
+    },
+    "fr_barbitur": {
+        "label": "Barbiturate",
+        "description": "Number of barbiturate motifs.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_benzodiazepine": {
+        "label": "Benzodiazepine",
+        "description": "Number of benzodiazepine motifs.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_dihydropyridine": {
+        "label": "Dihydropyridine",
+        "description": "Number of dihydropyridine rings.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "fr_epoxide": {
+        "label": "Epoxide",
+        "description": "Number of epoxide rings.",
+        "category": "Reactive Electrophiles"
+    },
+    "fr_methoxy": {
+        "label": "Methoxy",
+        "description": "Number of methoxy (-OCH₃) groups.",
+        "category": "Oxygen Compounds"
+    },
+    "fr_phenol": {
+        "label": "Phenol",
+        "description": "Number of phenol groups.",
+        "category": "Oxygen Compounds"
+    },
+    "fr_phenol_noOrthoHbond": {
+        "label": "Phenol without ortho hydrogen bond",
+        "description": "Phenol groups lacking intramolecular ortho hydrogen bonding.",
+        "category": "Oxygen Compounds"
+    },
+    "fr_phos_acid": {
+        "label": "Phosphonic/phosphoric acid",
+        "description": "Number of phosphonic or phosphoric acid groups.",
+        "category": "Phosphorus Compounds"
+    },
+    "fr_phos_ester": {
+        "label": "Phosphate ester",
+        "description": "Number of phosphate ester groups.",
+        "category": "Phosphorus Compounds"
+    },
+    "fr_priamide": {
+        "label": "Primary amide",
+        "description": "Number of primary amide groups.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "fr_prisulfonamd": {
+        "label": "Primary sulfonamide",
+        "description": "Number of primary sulfonamide groups.",
+        "category": "Sulfur Compounds"
+    },
+    "fr_urea": {
+        "label": "Urea",
+        "description": "Number of urea groups.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "fr_allylic_oxid": {
+        "label": "Number of Allylic Oxidation Sites",
+        "description": "Count of allylic carbon positions (sp³ carbons adjacent to a carbon-carbon double bond) that are susceptible to oxidative metabolism. These sites are recognized as potential metabolic soft spots in drug molecules, where cytochrome P450 enzymes can introduce hydroxyl groups.",
+        "category": "Metabolic Sites"
+    },
+    "fr_Imine": {
+        "label": "Number of Imine Groups",
+        "description": "Count of imine functional groups (C=N) where the nitrogen bears no hydrogen and is double-bonded to a carbon. Distinct from oximes and hydrazones which carry additional heteroatom substituents.",
+        "category": "Nitrogen Compounds"
+    },
+    "fr_aniline": {
+        "label": "Number of Aniline Groups",
+        "description": "Count of primary aromatic amine groups where an NH2 is directly attached to an aromatic ring. A subclass of aromatic amines relevant to dye chemistry, reactivity, and toxicity screening."
+    }
+},
+  "smart_search_labels": {
+
+    "carboxylate": {
+      "label": "Carboxylate Anion",
+      "description": "Deprotonated carboxylic acid group carrying a formal negative charge on oxygen. Common in physiological conditions and metal coordination.",
+      "category": "Carboxylic Acids & Derivatives"
+    },
+    "carboxylate_or_acid": {
+      "label": "Carboxylate or Carboxylic Acid",
+      "description": "SMARTS pattern matching either the protonated carboxylic acid or its deprotonated carboxylate form. Useful for pH-independent detection.",
+      "category": "Carboxylic Acids & Derivatives"
+    },
+    "anhydride": {
+      "label": "Acid Anhydride",
+      "description": "Two acyl groups linked through an oxygen atom. Highly reactive electrophile used in acylation reactions and polymer chemistry.",
+      "category": "Carboxylic Acids & Derivatives"
+    },
+    "acid_chloride": {
+      "label": "Acid Chloride (Acyl Chloride)",
+      "description": "Acyl group bearing a chlorine leaving group. Extremely reactive acylating agent used in synthesis.",
+      "category": "Carboxylic Acids & Derivatives"
+    },
+    "quinone": {
+      "label": "Quinone",
+      "description": "Cyclic diketone with a conjugated system, typically derived from aromatic rings. Important in redox biology, electron transfer, and natural product chemistry.",
+      "category": "Carbonyl Compounds"
+    },
+    "hydroxamate": {
+      "label": "Hydroxamate",
+      "description": "Functional group containing N–OH adjacent to a carbonyl (RC(=O)NHOH). Strong metal chelator widely used in HDAC inhibitors and siderophores.",
+      "category": "Nitrogen-Oxygen Compounds"
+    },
+    "thiolate": {
+      "label": "Thiolate Anion",
+      "description": "Deprotonated thiol group carrying a formal negative charge on sulfur. Excellent soft metal ligand and nucleophile in biological systems.",
+      "category": "Sulfur Compounds"
+    },
+    "disulfide": {
+      "label": "Disulfide Bond",
+      "description": "Covalent S–S bond between two sulfur atoms. Critical in protein folding, redox biochemistry, and prodrug design.",
+      "category": "Sulfur Compounds"
+    },
+    "sulfoxide": {
+      "label": "Sulfoxide",
+      "description": "Sulfur atom bearing one oxo group and two carbon substituents (R–S(=O)–R'). Chiral center in many drugs; intermediate oxidation state between sulfide and sulfone.",
+      "category": "Sulfur Compounds"
+    },
+    "sulfonic_acid": {
+      "label": "Sulfonic Acid",
+      "description": "Strongly acidic group (–SO₃H) with sulfur bearing two oxo groups and a hydroxyl. Used in ion exchange resins, dyes, and as bioisostere for carboxylic acids.",
+      "category": "Sulfur Compounds"
+    },
+    "sulfonate": {
+      "label": "Sulfonate Anion",
+      "description": "Deprotonated sulfonic acid (–SO₃⁻). Highly water-soluble anionic group used in dyes, surfactants, and drug formulation.",
+      "category": "Sulfur Compounds"
+    },
+    "thiocarbonyl": {
+      "label": "Thiocarbonyl",
+      "description": "Carbon-sulfur double bond (C=S). Found in thioketones, thioamides, and thioureas; more polarisable than carbonyl analogues.",
+      "category": "Sulfur Compounds"
+    },
+    "thioamide": {
+      "label": "Thioamide",
+      "description": "Amide group where the carbonyl oxygen is replaced by sulfur (RC(=S)NR'). Found in antibiotics and used as a carbonyl bioisostere.",
+      "category": "Sulfur Compounds"
+    },
+    "thiourea": {
+      "label": "Thiourea",
+      "description": "Urea analogue with a thiocarbonyl group (NH₂–C(=S)–NH₂ scaffold). Used in metal chelation, anion binding, and as a pharmacophore.",
+      "category": "Sulfur Compounds"
+    },
+    "phosphonic_acid": {
+      "label": "Phosphonic Acid",
+      "description": "Organophosphorus group bearing two hydroxyl groups on phosphorus (RP(=O)(OH)₂). Bioisostere for carboxylic and phosphoric acids.",
+      "category": "Phosphorus Compounds"
+    },
+    "phosphonate": {
+      "label": "Phosphonate",
+      "description": "Mono- or dianionic form of phosphonic acid. Strong metal binder and substrate mimic in enzyme inhibition.",
+      "category": "Phosphorus Compounds"
+    },
+    "phosphate": {
+      "label": "Phosphate",
+      "description": "Fully hydroxylated phosphorus oxoacid P(=O)(OH)₃ or its esters/salts. Central to energy metabolism, nucleic acids, and signalling.",
+      "category": "Phosphorus Compounds"
+    },
+    "phosphate_ester": {
+      "label": "Phosphate Ester",
+      "description": "Phosphate group where one or more hydroxyl is esterified with an alkyl or aryl group. Found in nucleotides, lipids, and prodrugs.",
+      "category": "Phosphorus Compounds"
+    },
+    "phosphine": {
+      "label": "Phosphine",
+      "description": "Trialkyl or triaryl phosphorus(III) compound (PR₃). Important ligand in transition metal catalysis and organophosphorus chemistry.",
+      "category": "Phosphorus Compounds"
+    },
+    "phosphine_oxide": {
+      "label": "Phosphine Oxide",
+      "description": "Phosphorus(V) compound with a P=O bond and three carbon substituents (R₃P=O). Used as a ligand, extractant, and synthetic intermediate.",
+      "category": "Phosphorus Compounds"
+    },
+    "boronic_acid": {
+      "label": "Boronic Acid",
+      "description": "Organoboron compound bearing two hydroxyl groups (RB(OH)₂). Key building block in Suzuki coupling, saccharide sensing, and protease inhibition.",
+      "category": "Boron Compounds"
+    },
+    "boronate_ester": {
+      "label": "Boronate Ester",
+      "description": "Boronic acid where both hydroxyls are esterified with an alcohol or diol (RB(OR')₂). Used as a protecting group and in responsive materials.",
+      "category": "Boron Compounds"
+    },
+    "silane": {
+      "label": "Silane (Si–H)",
+      "description": "Silicon atom bearing at least one hydrogen. Used as a reducing agent, coupling agent precursor, and in surface functionalisation.",
+      "category": "Silicon Compounds"
+    },
+    "siloxane": {
+      "label": "Siloxane",
+      "description": "Si–O–Si linkage forming the backbone of polysiloxanes (silicones). Important in materials science, coatings, and biomedical devices.",
+      "category": "Silicon Compounds"
+    },
+    "fluoro": {
+      "label": "Fluorine Substituent",
+      "description": "Any fluorine atom present in the molecule. Strongly influences metabolic stability, lipophilicity, and binding affinity in drug design.",
+      "category": "Halogens"
+    },
+    "chloro": {
+      "label": "Chlorine Substituent",
+      "description": "Any chlorine atom present in the molecule. Common in pharmaceuticals and agrochemicals; affects lipophilicity and electrophilicity.",
+      "category": "Halogens"
+    },
+    "bromo": {
+      "label": "Bromine Substituent",
+      "description": "Any bromine atom present in the molecule. Used in cross-coupling chemistry and as a metabolic stability probe.",
+      "category": "Halogens"
+    },
+    "iodo": {
+      "label": "Iodine Substituent",
+      "description": "Any iodine atom present in the molecule. Used in radiopharmaceuticals, cross-coupling, and as a steric/electronic probe.",
+      "category": "Halogens"
+    },
+    "alkene": {
+      "label": "Alkene (C=C)",
+      "description": "Carbon-carbon double bond between two sp² carbons. Site of electrophilic addition, metathesis, and oxidative metabolism.",
+      "category": "Unsaturated Hydrocarbons"
+    },
+    "alkyne": {
+      "label": "Alkyne (C≡C)",
+      "description": "Carbon-carbon triple bond between two sp carbons. Used in click chemistry, as a metabolic probe, and in materials science.",
+      "category": "Unsaturated Hydrocarbons"
+    },
+    "biphenyl": {
+      "label": "Biphenyl",
+      "description": "Two directly connected benzene rings. Common scaffold in pharmaceuticals and liquid crystals; can adopt non-planar conformations.",
+      "category": "Aromatic Carbocycles"
+    },
+    "terphenyl": {
+      "label": "Terphenyl",
+      "description": "Three linearly connected benzene rings. Used in organic electronics, liquid crystals, and as a rigid scaffold.",
+      "category": "Aromatic Carbocycles"
+    },
+    "pyrimidine": {
+      "label": "Pyrimidine Ring",
+      "description": "Six-membered aromatic ring with nitrogen atoms at positions 1 and 3. Found in nucleobases (cytosine, thymine, uracil) and many kinase inhibitors.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "pyrazine": {
+      "label": "Pyrazine Ring",
+      "description": "Six-membered aromatic ring with nitrogen atoms at positions 1 and 4. Found in vitamins and used as a ligand in coordination chemistry.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "pyridazine": {
+      "label": "Pyridazine Ring",
+      "description": "Six-membered aromatic ring with adjacent nitrogen atoms at positions 1 and 2. Found in pharmaceuticals and agrochemicals.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "triazine": {
+      "label": "Triazine Ring",
+      "description": "Six-membered aromatic ring containing three nitrogen atoms. Used in herbicides, dyes, and as a multidentate ligand scaffold.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "imidazolate": {
+      "label": "Imidazolate Anion",
+      "description": "Deprotonated imidazole ring bearing a formal negative charge on nitrogen. Key bridging ligand in zeolitic imidazolate frameworks (ZIFs) and metalloenzyme active sites.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "benzimidazole": {
+      "label": "Benzimidazole",
+      "description": "Fused bicyclic system of benzene and imidazole rings. Privileged scaffold in pharmaceuticals including antiparasitic and antifungal agents.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "pyrazole": {
+      "label": "Pyrazole Ring",
+      "description": "Five-membered aromatic ring with two adjacent nitrogen atoms, one bearing a hydrogen. Versatile pharmacophore and metal coordination motif.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "pyrazolate": {
+      "label": "Pyrazolate Anion",
+      "description": "Deprotonated pyrazole ring. Common bridging ligand in metal-organic frameworks and coordination polymers.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "triazole": {
+      "label": "Triazole Ring",
+      "description": "Five-membered aromatic ring containing three nitrogen atoms. Central to click chemistry (1,2,3-triazole) and antifungal drugs (1,2,4-triazole).",
+      "category": "Nitrogen Heterocycles"
+    },
+    "triazolate": {
+      "label": "Triazolate Anion",
+      "description": "Deprotonated triazole ring. Used as a bridging ligand in metal-organic frameworks with high nitrogen content.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "tetrazolate": {
+      "label": "Tetrazolate Anion",
+      "description": "Deprotonated tetrazole ring. Bioisostere for carboxylate in medicinal chemistry and a high-nitrogen ligand in coordination chemistry.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "isoxazole": {
+      "label": "Isoxazole Ring",
+      "description": "Five-membered aromatic ring with oxygen at position 1 and nitrogen at position 2. Found in antibiotics (cycloserine) and anti-inflammatory drugs.",
+      "category": "Mixed Heteroatom Heterocycles"
+    },
+    "isothiazole": {
+      "label": "Isothiazole Ring",
+      "description": "Five-membered aromatic ring with sulfur at position 1 and nitrogen at position 2. Found in biocides and pharmaceuticals.",
+      "category": "Mixed Heteroatom Heterocycles"
+    },
+    "quinoline": {
+      "label": "Quinoline Ring",
+      "description": "Fused benzene-pyridine bicyclic system with nitrogen at position 1. Found in antimalarials, antibiotics, and metal chelators.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "isoquinoline": {
+      "label": "Isoquinoline Ring",
+      "description": "Fused benzene-pyridine bicyclic system with nitrogen at position 2. Found in alkaloids and used as a bidentate ligand.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "phenanthroline": {
+      "label": "Phenanthroline",
+      "description": "Tricyclic aromatic system with two nitrogen atoms. Classical bidentate or tridentate ligand for transition metals; used in luminescent probes.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "bipyridine": {
+      "label": "Bipyridine",
+      "description": "Two pyridine rings connected by a single bond. The most widely used bidentate nitrogen ligand in coordination chemistry and photocatalysis.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "terpyridine": {
+      "label": "Terpyridine",
+      "description": "Three connected pyridine rings forming a tridentate N,N,N-chelating ligand. Widely used in supramolecular chemistry and metallopolymers.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "benzofuran": {
+      "label": "Benzofuran",
+      "description": "Fused benzene-furan bicyclic aromatic system. Found in natural products and used as a scaffold in medicinal chemistry.",
+      "category": "Oxygen Heterocycles"
+    },
+    "benzothiophene": {
+      "label": "Benzothiophene",
+      "description": "Fused benzene-thiophene bicyclic aromatic system. Found in pharmaceuticals including raloxifene and used in organic electronics.",
+      "category": "Sulfur Heterocycles"
+    },
+    "pyridinium": {
+      "label": "Pyridinium Cation",
+      "description": "Positively charged protonated or N-alkylated pyridine ring. Found in ionic liquids, cofactors (NAD⁺), and antimicrobial agents.",
+      "category": "Charged Nitrogen Species"
+    },
+    "imidazolium": {
+      "label": "Imidazolium Cation",
+      "description": "Positively charged N-substituted imidazole ring. The defining cation of imidazolium ionic liquids and N-heterocyclic carbene precursors.",
+      "category": "Charged Nitrogen Species"
+    },
+    "sulfonium": {
+      "label": "Sulfonium Cation",
+      "description": "Positively charged trivalent sulfur species (R₃S⁺). Found in biological methyl donors (S-adenosylmethionine) and as reactive intermediates.",
+      "category": "Charged Sulfur Species"
+    },
+    "phosphonium": {
+      "label": "Phosphonium Cation",
+      "description": "Positively charged tetravalent phosphorus species (R₄P⁺). Used in Wittig reagents, mitochondria-targeting drug delivery, and ionic liquids.",
+      "category": "Charged Phosphorus Species"
+    },
+    "peroxide": {
+      "label": "Peroxide",
+      "description": "O–O single bond between two oxygen atoms. Highly reactive oxidant; found in antimalarials (artemisinin) and used as a radical initiator.",
+      "category": "Oxygen Compounds"
+    },
+    "beta_diketone": {
+      "label": "Beta-Diketone",
+      "description": "Two ketone groups separated by a single methylene or methine. Forms stable six-membered chelate rings with metal ions; found in acetylacetone and curcumin.",
+      "category": "Metal Chelating Groups"
+    },
+    "acetylacetonate_like": {
+      "label": "Acetylacetonate-like (Enolate Form)",
+      "description": "Deprotonated beta-diketone in its enolate form. Classical monoanionic O,O-bidentate chelating ligand for a wide range of metal ions.",
+      "category": "Metal Chelating Groups"
+    },
+    "salicylaldehyde": {
+      "label": "Salicylaldehyde",
+      "description": "2-Hydroxybenzaldehyde motif combining a phenol and an aldehyde in ortho positions. Key precursor to Schiff base ligands and salen complexes.",
+      "category": "Metal Chelating Groups"
+    },
+    "salen_like": {
+      "label": "Salen-like Schiff Base",
+      "description": "Imine nitrogen adjacent to a phenol hydroxyl forming an N,O-chelating unit. Core motif of salen ligands used in asymmetric catalysis.",
+      "category": "Metal Chelating Groups"
+    },
+    "diimine": {
+      "label": "Alpha-Diimine",
+      "description": "Two imine groups (C=N) on adjacent or nearby carbons forming a bidentate N,N-chelating unit. Common in olefin polymerisation catalysts.",
+      "category": "Metal Chelating Groups"
+    },
+    "dicarboxylate": {
+      "label": "Dicarboxylate",
+      "description": "Two carboxylate or carboxylic acid groups within the same molecule. Key linker in metal-organic frameworks and coordination polymers.",
+      "category": "Metal Chelating Groups"
+    },
+    "hydroxy_carboxylate": {
+      "label": "Hydroxy Carboxylate",
+      "description": "Molecule containing both a hydroxyl and a carboxylate group enabling O,O-bidentate chelation. Found in citrate, malate, and alpha-hydroxy acids.",
+      "category": "Metal Chelating Groups"
+    },
+    "amino_carboxylate": {
+      "label": "Amino Carboxylate",
+      "description": "Molecule containing both an amine and a carboxylate group enabling N,O-chelation. Central motif in amino acids, EDTA, and NTA.",
+      "category": "Metal Chelating Groups"
+    },
+    "amidoxime": {
+      "label": "Amidoxime",
+      "description": "Functional group combining an amide nitrogen and an oxime (C(=NOH)NH₂). Strong chelator for uranyl and other actinide ions; used in seawater uranium extraction.",
+      "category": "Metal Chelating Groups"
+    },
+    "catechol": {
+      "label": "Catechol (1,2-Dihydroxybenzene)",
+      "description": "Benzene ring bearing two adjacent hydroxyl groups. Potent O,O-chelating unit for hard metal ions; found in siderophores and DOPA-based adhesives.",
+      "category": "Metal Chelating Groups"
+    },
+    "resorcinol": {
+      "label": "Resorcinol (1,3-Dihydroxybenzene)",
+      "description": "Benzene ring bearing two hydroxyl groups in meta positions. Used in resins, pharmaceuticals, and as a chelating scaffold.",
+      "category": "Polyhydroxy Aromatics"
+    },
+    "hydroquinone": {
+      "label": "Hydroquinone (1,4-Dihydroxybenzene)",
+      "description": "Benzene ring bearing two hydroxyl groups in para positions. Reversible redox couple with quinone; used in photography, antioxidants, and electrochemistry.",
+      "category": "Polyhydroxy Aromatics"
+    },
+    "oxamate_like": {
+      "label": "Oxamate-like Group",
+      "description": "Amide of oxalic acid bearing a carboxylate or carboxylic acid (NH₂–C(=O)–COO⁻). Bidentate N,O-chelating group used in coordination chemistry.",
+      "category": "Metal Chelating Groups"
+    },
+    "hydrazide": {
+      "label": "Hydrazide",
+      "description": "Acyl hydrazine group (RC(=O)–NH–NH₂). Forms hydrazone Schiff bases with aldehydes and ketones; used as a metal chelating pharmacophore.",
+      "category": "Nitrogen Compounds"
+    },
+    "zwitterion": {
+      "label": "Zwitterion",
+      "description": "Molecule bearing both a formal positive and a formal negative charge. Includes amino acids, betaines, and many drug molecules at physiological pH.",
+      "category": "Charged Species"
+    },
+    "carbonate_ester": {
+      "label": "Carbonate Ester",
+      "description": "Ester of carbonic acid (O=C(OR)(OR')). Used as a protecting group, in polycarbonate polymers, and as a prodrug linker.",
+      "category": "Carbonyl Compounds"
+    },
+    "carbamate": {
+      "label": "Carbamate (Urethane)",
+      "description": "Ester of carbamic acid (NR–C(=O)–OR'). Widely used in prodrug design, protecting group chemistry (Boc, Cbz), and polyurethane polymers.",
+      "category": "Nitrogen-Oxygen Compounds"
+    },
+    "carbamic_acid": {
+      "label": "Carbamic Acid",
+      "description": "Free acid form of carbamate (NR–C(=O)–OH). Thermally labile; important intermediate in CO₂ fixation and amine protection.",
+      "category": "Nitrogen-Oxygen Compounds"
+    },
+    "hemiaminal": {
+      "label": "Hemiaminal",
+      "description": "Carbon bearing both an OH and an NR₂ group. Unstable intermediate in imine formation and in the mechanism of many enzymatic reactions.",
+      "category": "Nitrogen-Oxygen Compounds"
+    },
+    "hemiketal": {
+      "label": "Hemiketal",
+      "description": "Carbon bearing both an OH and an OR group adjacent to another carbon. Intermediate in ketal formation; found in cyclic sugar forms.",
+      "category": "Oxygen Compounds"
+    },
+    "acetal": {
+      "label": "Acetal",
+      "description": "Carbon bearing two OR groups derived from an aldehyde (CH(OR)₂). Stable protecting group for aldehydes under basic conditions.",
+      "category": "Oxygen Compounds"
+    },
+    "orthoester": {
+      "label": "Orthoester",
+      "description": "Carbon bearing three OR groups (C(OR)₃). Used as a protecting group and as a slow-release linker in prodrug and polymer chemistry.",
+      "category": "Oxygen Compounds"
+    },
+    "enol": {
+      "label": "Enol",
+      "description": "Hydroxyl group directly attached to a C=C double bond (C=C–OH). Tautomeric form of carbonyl compounds; important in enzyme mechanisms.",
+      "category": "Oxygen Compounds"
+    },
+    "enol_ether": {
+      "label": "Enol Ether",
+      "description": "Oxygen atom bridging a vinyl carbon and an alkyl group (C=C–OR). Used as a protecting group and as a nucleophilic alkene in synthesis.",
+      "category": "Oxygen Compounds"
+    },
+    "vinyl_halide": {
+      "label": "Vinyl Halide",
+      "description": "Halogen substituent directly attached to an sp² carbon of a C=C bond. Substrate in cross-coupling reactions (Heck, Suzuki, Negishi).",
+      "category": "Halogens"
+    },
+    "allyl_halide": {
+      "label": "Allyl Halide",
+      "description": "Halogen on a carbon adjacent to a C=C bond. Reactive electrophile in allylic substitution and palladium-catalysed coupling.",
+      "category": "Halogens"
+    },
+    "alpha_halo_carbonyl": {
+      "label": "Alpha-Halo Carbonyl",
+      "description": "Halogen atom on the carbon alpha to a carbonyl group. Potent electrophile and alkylating agent; used in synthesis and as a warhead in covalent drugs.",
+      "category": "Reactive Electrophiles"
+    },
+    "michael_acceptor": {
+      "label": "Michael Acceptor",
+      "description": "Electron-deficient alkene conjugated with a carbonyl group (enone). Reacts with nucleophiles via 1,4-addition; used as a covalent warhead in drug design.",
+      "category": "Reactive Electrophiles"
+    },
+    "maleimide": {
+      "label": "Maleimide",
+      "description": "Cyclic imide with a C=C double bond in the ring. Highly reactive Michael acceptor used in bioconjugation and polymer chemistry.",
+      "category": "Reactive Electrophiles"
+    },
+    "succinimide": {
+      "label": "Succinimide",
+      "description": "Five-membered cyclic imide derived from succinic acid. Found in drugs and as a byproduct of maleimide–thiol conjugation.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "phthalimide": {
+      "label": "Phthalimide",
+      "description": "Cyclic imide fused to a benzene ring. Used as a nitrogen protecting group (Gabriel synthesis) and in thalidomide-related pharmacology.",
+      "category": "Nitrogen Heterocycles"
+    },
+    "beta_lactam": {
+      "label": "Beta-Lactam",
+      "description": "Four-membered cyclic amide. Core pharmacophore of penicillin and cephalosporin antibiotics; reacts covalently with bacterial transpeptidases.",
+      "category": "Reactive Electrophiles"
+    },
+    "sultam": {
+      "label": "Sultam",
+      "description": "Cyclic sulfonamide where nitrogen and sulfur are part of the same ring. Found in pharmaceutical agents and used as a chiral auxiliary.",
+      "category": "Sulfur Compounds"
+    },
+    "sultone": {
+      "label": "Sultone",
+      "description": "Cyclic sulfonate ester. Reactive electrophile used as an alkylating agent and in battery electrolyte additives.",
+      "category": "Reactive Electrophiles"
+    },
+    "dioxolane": {
+      "label": "Dioxolane",
+      "description": "Five-membered ring containing two oxygen atoms and three carbons. Used as a cyclic acetal protecting group for aldehydes and ketones.",
+      "category": "Oxygen Heterocycles"
+    },
+    "crown_ether_fragment": {
+      "label": "Crown Ether Fragment",
+      "description": "Repeating ethyleneoxy unit (–CH₂CH₂O–) characteristic of crown ethers. Selectively binds alkali and alkaline earth metal cations based on cavity size.",
+      "category": "Supramolecular Motifs"
+    },
+    "cryptand_fragment": {
+      "label": "Cryptand Fragment",
+      "description": "Branched polyether-polyamine unit forming three-dimensional cavities for metal ion encapsulation. Provides stronger binding than crown ethers.",
+      "category": "Supramolecular Motifs"
+    },
+    "amino_acid_backbone": {
+      "label": "Amino Acid Backbone",
+      "description": "The canonical N–Cα–C(=O)–O motif of an alpha-amino acid. Detected regardless of side chain identity; used to identify amino acid residues.",
+      "category": "Biomolecular Motifs"
+    },
+    "peptide_bond": {
+      "label": "Peptide Bond",
+      "description": "Amide bond connecting adjacent amino acid residues (–NH–C(=O)–CH–NH–). Fundamental linkage in proteins and peptide-based drugs.",
+      "category": "Biomolecular Motifs"
+    },
+    "nucleobase_purine": {
+      "label": "Purine Nucleobase",
+      "description": "Fused imidazole-pyrimidine bicyclic system. Core scaffold of adenine and guanine; found in nucleic acids and purinergic signalling molecules.",
+      "category": "Biomolecular Motifs"
+    },
+    "nucleobase_pyrimidine_like": {
+      "label": "Pyrimidine Nucleobase-like",
+      "description": "Pyrimidine ring bearing a carbonyl group mimicking cytosine, thymine, or uracil. Detected as a nucleobase-related scaffold.",
+      "category": "Biomolecular Motifs"
+    },
+    "catecholate": {
+      "label": "Catecholate Dianion",
+      "description": "Fully deprotonated catechol bearing two negative charges on adjacent phenolic oxygens. Extremely strong chelating ligand for hard metal ions.",
+      "category": "Metal Chelating Groups"
+    },
+    "semiquinone": {
+      "label": "Semiquinone Radical",
+      "description": "One-electron reduction product of a quinone bearing a radical and a hydroxyl group. Important intermediate in biological electron transfer chains.",
+      "category": "Redox-Active Groups"
+    },
+    "phenolate": {
+      "label": "Phenolate Anion",
+      "description": "Deprotonated phenol bearing a formal negative charge on oxygen (ArO⁻). Metal binding group and reactive nucleophile in enzymatic reactions.",
+      "category": "Oxygen Compounds"
+    },
+    "alkoxide": {
+      "label": "Alkoxide Anion",
+      "description": "Deprotonated aliphatic alcohol (RO⁻). Strong base and nucleophile; common metal-binding group in alkoxide metal complexes.",
+      "category": "Oxygen Compounds"
+    },
+    "enolate": {
+      "label": "Enolate Anion",
+      "description": "Deprotonated enol carrying a negative charge delocalised over C–C–O. Key reactive intermediate in aldol reactions and enzymatic carbon–carbon bond formation.",
+      "category": "Oxygen Compounds"
+    },
+    "thiocarbamate": {
+      "label": "Thiocarbamate",
+      "description": "Carbamate where the carbonyl oxygen is replaced by sulfur (NR–C(=S)–OR'). Used in pesticides, vulcanisation accelerators, and as a metal chelator.",
+      "category": "Sulfur Compounds"
+    },
+    "dithiocarbamate": {
+      "label": "Dithiocarbamate",
+      "description": "Both oxygens of carbamate replaced by sulfur (NR–C(=S)–S⁻). Potent soft metal chelator used in fungicides, rubber vulcanisation, and heavy metal remediation.",
+      "category": "Sulfur Compounds"
+    },
+    "xanthate": {
+      "label": "Xanthate",
+      "description": "Ester of xanthic acid (RO–C(=S)–S⁻). Used in froth flotation for metal ore processing and as a precursor to dithioesters in RAFT polymerisation.",
+      "category": "Sulfur Compounds"
+    },
+    "trithiocarbonate": {
+      "label": "Trithiocarbonate",
+      "description": "All-sulfur analogue of carbonate (S–C(=S)–S). Used as a RAFT agent in controlled radical polymerisation.",
+      "category": "Sulfur Compounds"
+    },
+    "phosphoramide": {
+      "label": "Phosphoramide",
+      "description": "Phosphorus bearing two amino groups and one oxo group (P(=O)(NR₂)₂). Found in chemotherapy agents (cyclophosphamide-like) and as a Lewis base ligand.",
+      "category": "Phosphorus Compounds"
+    },
+    "phosphoramidate": {
+      "label": "Phosphoramidate",
+      "description": "Phosphate ester where one oxygen is replaced by nitrogen (P(=O)(NR)(OR)(OR)). Used in nucleotide prodrugs (ProTide technology).",
+      "category": "Phosphorus Compounds"
+    },
+    "thiophosphate": {
+      "label": "Thiophosphate",
+      "description": "Phosphate group where one oxo oxygen is replaced by sulfur (P(=S)(OH)₃ or ester). Found in insecticides and in phosphorothioate antisense oligonucleotides.",
+      "category": "Phosphorus Compounds"
+    },
+    "arsenic_acid": {
+      "label": "Arsenic Acid / Arsenate",
+      "description": "Organoarsenic group bearing hydroxyl groups on arsenic (As(=O)(OH)₂ or similar). Found in arsenical drugs and as a phosphate mimic in toxicology.",
+      "category": "Other Heteroatom Compounds"
+    },
+    "selenol": {
+      "label": "Selenol",
+      "description": "Se–H group analogous to a thiol. Found in selenocysteine, the 21st amino acid; strongly nucleophilic and redox-active.",
+      "category": "Selenium Compounds"
+    },
+    "selenide": {
+      "label": "Selenide",
+      "description": "Divalent selenium bonded to two carbon groups (R–Se–R'). Organoselenium compound with antioxidant and catalytic properties.",
+      "category": "Selenium Compounds"
+    },
+    "diselenide": {
+      "label": "Diselenide",
+      "description": "Se–Se bond analogous to disulfide. Found in selenoprotein mimetics and used in redox-responsive drug delivery systems.",
+      "category": "Selenium Compounds"
+    },
+    "selenoxide": {
+      "label": "Selenoxide",
+      "description": "Selenium bearing one oxo group (R–Se(=O)–R'). Undergoes facile elimination to give alkenes; intermediate in biological selenium oxidation.",
+      "category": "Selenium Compounds"
+    },
+    "telluride": {
+      "label": "Telluride",
+      "description": "Divalent tellurium bonded to two carbon groups (R–Te–R'). Used in organotellurium chemistry and as a precursor in semiconductor synthesis.",
+      "category": "Other Heteroatom Compounds"
+    },
+    "metal_binding_NNO": {
+      "label": "Tridentate N,N,O Metal-Binding Motif",
+      "description": "Fragment containing two nitrogen donors and one oxygen donor in proximity, capable of forming a facial or meridional tridentate chelate with metal ions.",
+      "category": "Metal Chelating Groups"
+    },
+    "metal_binding_ONO": {
+      "label": "Tridentate O,N,O Metal-Binding Motif",
+      "description": "Fragment containing two oxygen donors flanking a nitrogen donor, forming a pincer-type tridentate chelate. Found in aminocarboxylate and hydroxamate-based ligands.",
+      "category": "Metal Chelating Groups"
+    },
+    "metal_binding_NNN": {
+      "label": "Tridentate N,N,N Metal-Binding Motif",
+      "description": "Fragment containing three nitrogen donors in proximity capable of meridional or facial tridentate chelation. Found in terpyridine, tren, and triazacyclononane scaffolds.",
+      "category": "Metal Chelating Groups"
+    },
+    "porphyrin_fragment": {
+      "label": "Porphyrin Fragment",
+      "description": "Aromatic macrocyclic core with alternating pyrrole and methine units. Tetradentate N₄ ligand that binds iron in haem, magnesium in chlorophyll, and cobalt in vitamin B₁₂.",
+      "category": "Macrocyclic & Supramolecular"
+    },
+    "macrocycle_fragment": {
+      "label": "Macrocyclic Ring (≥14-membered)",
+      "description": "Ring system with 14 or more atoms. Macrocycles exhibit unique conformational properties and are increasingly important in drug discovery for targeting protein-protein interactions.",
+      "category": "Macrocyclic & Supramolecular"
+    },
+    "rotaxane_stopper": {
+      "label": "Rotaxane Stopper Group",
+      "description": "Bulky trityl-like group used to cap the axle of a rotaxane and prevent dethreading of the macrocyclic wheel. Key component in mechanically interlocked molecules.",
+      "category": "Supramolecular Motifs"
+    },
+    "catenane_fragment": {
+      "label": "Catenane Ring Fragment",
+      "description": "Large polyether ring characteristic of catenane components. Mechanically interlocked with another ring without covalent bonding.",
+      "category": "Supramolecular Motifs"
+    },
+    "fluorophore_coumarin": {
+      "label": "Coumarin Fluorophore",
+      "description": "Benzopyranone aromatic system that is intrinsically fluorescent. Widely used as a fluorescent probe, laser dye, and in FRET-based biosensors.",
+      "category": "Optical & Functional Materials"
+    },
+    "fluorophore_naphthalimide": {
+      "label": "Naphthalimide Fluorophore",
+      "description": "Naphthalene bisimide-derived fluorophore with strong absorption and emission. Used in fluorescent probes for ions, pH sensors, and organic semiconductors.",
+      "category": "Optical & Functional Materials"
+    },
+    "spin_label_nitroxide": {
+      "label": "Nitroxide Spin Label",
+      "description": "Stable N–O radical used as a spin label in EPR spectroscopy. Attached to biomolecules to probe structure and dynamics.",
+      "category": "Redox-Active Groups"
+    },
+    "radical_trap_tempo": {
+      "label": "TEMPO Radical Trap",
+      "description": "2,2,6,6-Tetramethylpiperidine-1-oxyl (TEMPO) motif. Persistent nitroxide radical used as an oxidant catalyst, radical trap, and spin label.",
+      "category": "Redox-Active Groups"
+    },
+    "photoswitch_azobenzene": {
+      "label": "Azobenzene Photoswitch",
+      "description": "Trans/cis-isomerisable azo group flanked by phenyl rings. The most widely used molecular photoswitch for light-controlled drug delivery and materials.",
+      "category": "Optical & Functional Materials"
+    },
+    "photoswitch_diarylethene": {
+      "label": "Diarylethene Photoswitch",
+      "description": "Photochromic unit based on two aryl groups (typically thiophene) connected by an ethene bridge undergoing reversible electrocyclic ring closure.",
+      "category": "Optical & Functional Materials"
+    },
+    "redox_ferrocene_like": {
+      "label": "Ferrocene-like Redox Centre",
+      "description": "Iron atom present in an organometallic context. Detected as a proxy for ferrocene-type sandwich complexes with reversible Fe²⁺/Fe³⁺ redox activity.",
+      "category": "Redox-Active Groups"
+    },
+    "cage_compound": {
+      "label": "Cage Compound Fragment",
+      "description": "Presence of strained small rings (3- or 4-membered) in proximity, indicative of cage-like polycyclic frameworks such as cubane, adamantane, or prismane.",
+      "category": "Macrocyclic & Supramolecular"
+    },
+    "cucurbituril_fragment": {
+      "label": "Cucurbituril Fragment",
+      "description": "Glycoluril-derived unit with flanking methylene bridges characteristic of cucurbit[n]uril macrocycles. Host molecules for hydrophobic guest binding in water.",
+      "category": "Supramolecular Motifs"
+    },
+    "cyclodextrin_fragment": {
+      "label": "Cyclodextrin Fragment",
+      "description": "Glucopyranose unit with hydroxyl groups characteristic of cyclodextrin macrocycles. Cyclic oligosaccharides used for drug encapsulation and chiral separation.",
+      "category": "Supramolecular Motifs"
+    },
+    "carboxylic_acid": {
+        "label": "Carboxylic Acid",
+        "description": "Organic acid group containing a carbonyl and hydroxyl on the same carbon (–COOH). Fundamental functional group in biochemistry, pharmaceuticals, and materials chemistry.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "ester": {
+        "label": "Ester",
+        "description": "Carbonyl group flanked by an oxygen connected to a carbon (RC(=O)OR'). Widely found in fats, fragrances, and polymers; commonly used as a prodrug linker.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "amide": {
+        "label": "Amide",
+        "description": "Carbonyl group directly bonded to a nitrogen atom (RC(=O)NR'R''). The fundamental linkage in proteins and a key pharmacophore in drug design.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "imide": {
+        "label": "Imide",
+        "description": "Two carbonyl groups flanking a single nitrogen atom (RC(=O)NR'C(=O)R''). Found in phthalimide, succinimide, and maleimide scaffolds.",
+        "category": "Carboxylic Acids & Derivatives"
+    },
+    "aldehyde": {
+        "label": "Aldehyde",
+        "description": "Terminal carbonyl group bearing one hydrogen (RCHO). Reactive electrophile that forms Schiff bases with amines; important in metabolic reactions and covalent drug design.",
+        "category": "Carbonyl Compounds"
+    },
+    "ketone": {
+        "label": "Ketone",
+        "description": "Internal carbonyl group flanked by two carbon substituents (RC(=O)R'). Common pharmacophore and metabolic product of secondary alcohols.",
+        "category": "Carbonyl Compounds"
+    },
+    "amine_primary": {
+        "label": "Primary Amine",
+        "description": "Nitrogen bearing two hydrogens and one carbon substituent (RNH₂). Basic and nucleophilic; found in amino acids and many drug molecules.",
+        "category": "Nitrogen Compounds"
+    },
+    "amine_secondary": {
+        "label": "Secondary Amine",
+        "description": "Nitrogen bearing one hydrogen and two carbon substituents (R₂NH). Common in alkaloids, drug scaffolds, and N-dealkylation metabolic pathways.",
+        "category": "Nitrogen Compounds"
+    },
+    "amine_tertiary": {
+        "label": "Tertiary Amine",
+        "description": "Nitrogen bearing three carbon substituents and no hydrogens (R₃N). Found in many drugs; site of N-oxidation metabolism and quaternisation.",
+        "category": "Nitrogen Compounds"
+    },
+    "aromatic_amine": {
+        "label": "Aromatic Amine",
+        "description": "Amine nitrogen directly attached to an aromatic ring. Influences basicity, reactivity, and metabolic profile; relevant to toxicity screening.",
+        "category": "Nitrogen Compounds"
+    },
+    "aniline": {
+        "label": "Aniline",
+        "description": "Primary amine directly attached to a benzene or aromatic ring (ArNH₂). Important in dye synthesis and pharmaceuticals; monitored for potential toxic metabolites.",
+        "category": "Nitrogen Compounds"
+    },
+    "imine": {
+        "label": "Imine (Schiff Base)",
+        "description": "Carbon-nitrogen double bond (C=N) where nitrogen bears no hydrogen. Forms reversibly from aldehydes or ketones with primary amines; used in metal chelation and covalent drug design.",
+        "category": "Nitrogen Compounds"
+    },
+    "oxime": {
+        "label": "Oxime",
+        "description": "Imine derivative where nitrogen bears a hydroxyl group (C=NOH). Formed from carbonyl compounds and hydroxylamine; used as a protecting group and in reactivation of nerve agent inhibited enzymes.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "hydrazone": {
+        "label": "Hydrazone",
+        "description": "Imine derivative where nitrogen is connected to another nitrogen (C=N–NR₂). Formed from carbonyl compounds and hydrazines; used as a pH-responsive linker in drug delivery.",
+        "category": "Nitrogen Compounds"
+    },
+    "azide": {
+        "label": "Azide",
+        "description": "Three consecutive nitrogen atoms (–N₃) in a linear arrangement. Used in click chemistry (Huisgen cycloaddition), bioorthogonal labelling, and as a high-energy functional group.",
+        "category": "Nitrogen Compounds"
+    },
+    "azo": {
+        "label": "Azo Group",
+        "description": "Nitrogen-nitrogen double bond flanked by two carbon groups (R–N=N–R'). Found in azo dyes, photoswitches, and prodrug linkers cleaved by azo-reductases.",
+        "category": "Nitrogen Compounds"
+    },
+    "nitro": {
+        "label": "Nitro Group",
+        "description": "Nitrogen bearing two oxygens in a –NO₂ arrangement. Strongly electron-withdrawing; found in antibiotics and explosives and reduced metabolically to amines.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "nitrile": {
+        "label": "Nitrile (Cyano Group)",
+        "description": "Carbon-nitrogen triple bond (C≡N). Metabolically stable bioisostere for carboxylic acids and amides; used in kinase inhibitors and as a synthetic intermediate.",
+        "category": "Nitrogen Compounds"
+    },
+    "isocyanate": {
+        "label": "Isocyanate",
+        "description": "Highly reactive group containing a cumulated N=C=O system. Reacts rapidly with amines and alcohols; used in polyurethane synthesis and as a covalent warhead.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "isothiocyanate": {
+        "label": "Isothiocyanate",
+        "description": "Cumulated N=C=S system analogous to isocyanate. Found in glucosinolate-derived natural products such as sulforaphane; reacts with amines and thiols.",
+        "category": "Sulfur Compounds"
+    },
+    "urea": {
+        "label": "Urea",
+        "description": "Two amine groups flanking a carbonyl (H₂N–C(=O)–NH₂ scaffold). Versatile hydrogen-bond donor and acceptor; found in many kinase inhibitors and used as a solubilising group.",
+        "category": "Nitrogen-Oxygen Compounds"
+    },
+    "guanidine": {
+        "label": "Guanidine",
+        "description": "Strongly basic group with three nitrogens on a central carbon (HN=C(NH₂)₂). Found in arginine, metformin, and many natural products; forms strong hydrogen bonds.",
+        "category": "Nitrogen Compounds"
+    },
+    "alcohol": {
+        "label": "Alcohol",
+        "description": "Hydroxyl group attached to an sp³ carbon (ROH). Ubiquitous in natural products and drugs; site of glucuronidation and oxidative metabolism.",
+        "category": "Oxygen Compounds"
+    },
+    "phenol": {
+        "label": "Phenol",
+        "description": "Hydroxyl group directly attached to an aromatic ring (ArOH). More acidic than aliphatic alcohols; site of glucuronidation and sulfation metabolism.",
+        "category": "Oxygen Compounds"
+    },
+    "ether": {
+        "label": "Ether",
+        "description": "Oxygen atom bridging two carbon groups (R–O–R'). Metabolically stable linker; found in many drug scaffolds and used as a protecting group.",
+        "category": "Oxygen Compounds"
+    },
+    "epoxide": {
+        "label": "Epoxide (Oxirane)",
+        "description": "Three-membered ring containing one oxygen and two carbons. Highly reactive electrophile; formed as a metabolic intermediate and used as a synthetic building block.",
+        "category": "Reactive Electrophiles"
+    },
+    "thiol": {
+        "label": "Thiol",
+        "description": "Sulfhydryl group (–SH) attached to a carbon. Strong nucleophile and soft metal ligand; found in cysteine residues and used in bioconjugation chemistry.",
+        "category": "Sulfur Compounds"
+    },
+    "thioether": {
+        "label": "Thioether (Sulfide)",
+        "description": "Sulfur atom bonded to two carbon groups (R–S–R'). Found in methionine and many drugs; oxidised metabolically to sulfoxides and sulfones.",
+        "category": "Sulfur Compounds"
+    },
+    "sulfone": {
+        "label": "Sulfone",
+        "description": "Sulfur bearing two oxo groups and two carbon substituents (R–S(=O)₂–R'). Metabolically stable; used as a bioisostere and to improve aqueous solubility.",
+        "category": "Sulfur Compounds"
+    },
+    "sulfonamide": {
+        "label": "Sulfonamide",
+        "description": "Sulfonyl group bearing an amine (R–S(=O)₂–NR'R''). Found in antibiotics, diuretics, and antidiabetics; a key bioisostere for carboxylic acids.",
+        "category": "Sulfur Compounds"
+    },
+    "alkyl_halide": {
+        "label": "Alkyl Halide",
+        "description": "Halogen substituent on an sp³ carbon. Reactive electrophile used in alkylation reactions; relevant to toxicity and reactivity screening.",
+        "category": "Halogens"
+    },
+    "aryl_halide": {
+        "label": "Aryl Halide",
+        "description": "Halogen substituent directly attached to an aromatic ring. Key substrate in cross-coupling reactions (Suzuki, Heck, Buchwald); influences lipophilicity and metabolic stability.",
+        "category": "Halogens"
+    },
+    "halogen": {
+        "label": "Halogen Substituent (Any)",
+        "description": "Any fluorine, chlorine, bromine, or iodine atom present in the molecule regardless of attachment context. Used as a broad-spectrum halogen count.",
+        "category": "Halogens"
+    },
+    "benzene": {
+        "label": "Benzene Ring",
+        "description": "Six-membered fully aromatic carbocycle (C₆H₆ scaffold). The most common aromatic ring in pharmaceuticals; influences lipophilicity, metabolic hydroxylation, and stacking interactions.",
+        "category": "Aromatic Carbocycles"
+    },
+    "furan": {
+        "label": "Furan Ring",
+        "description": "Five-membered aromatic ring containing one oxygen atom. Found in natural products and drug scaffolds; can be metabolically activated to reactive epoxide intermediates.",
+        "category": "Oxygen Heterocycles"
+    },
+    "thiophene": {
+        "label": "Thiophene Ring",
+        "description": "Five-membered aromatic ring containing one sulfur atom. Common bioisostere for benzene and furan; found in many drugs including clopidogrel and tiotropium.",
+        "category": "Sulfur Heterocycles"
+    },
+    "thiazole": {
+        "label": "Thiazole Ring",
+        "description": "Five-membered aromatic ring containing one sulfur and one nitrogen atom. Found in vitamin B₁ and many antibiotics; used as a pharmacophore in medicinal chemistry.",
+        "category": "Mixed Heteroatom Heterocycles"
+    },
+    "imidazole": {
+        "label": "Imidazole Ring",
+        "description": "Five-membered aromatic ring with two nitrogen atoms, one bearing a hydrogen. Found in histidine, histamine, and many drugs; amphoteric and metal-coordinating.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "oxazole": {
+        "label": "Oxazole Ring",
+        "description": "Five-membered aromatic ring containing one oxygen and one nitrogen atom. Found in natural products and used as a carboxylic acid bioisostere in medicinal chemistry.",
+        "category": "Mixed Heteroatom Heterocycles"
+    },
+    "pyridine": {
+        "label": "Pyridine Ring",
+        "description": "Six-membered aromatic ring containing one nitrogen atom. The most prevalent nitrogen heterocycle in approved drugs; influences basicity, solubility, and metabolism.",
+        "category": "Nitrogen Heterocycles"
+    },
+    "tetrazole": {
+        "label": "Tetrazole Ring",
+        "description": "Five-membered aromatic ring containing four nitrogen atoms and one carbon. Classical bioisostere for carboxylic acids; used in angiotensin receptor blockers (e.g. losartan).",
+        "category": "Nitrogen Heterocycles"
+    },
+    "lactone": {
+        "label": "Lactone",
+        "description": "Cyclic ester formed by intramolecular esterification. Found in many natural products and macrolide antibiotics; can be hydrolysed under physiological conditions.",
+        "category": "Oxygen Heterocycles"
+    },
+    "aromatic_ring": {
+        "label": "Aromatic Ring (Any)",
+        "description": "Any aromatic ring system detected by a generic aromatic SMARTS pattern. Covers all aromatic carbocycles and heterocycles regardless of heteroatom content.",
+        "category": "Aromatic Carbocycles"
+    }
+},
+  "smart_search_map": {
+    "fr_COO": "carboxylic_acid",
+    "fr_COO2": "carboxylate_or_acid",
+    "fr_ester": "ester",
+    "fr_amide": "amide",
+    "fr_imide": "imide",
+    "fr_aldehyde": "aldehyde",
+    "fr_ketone": "ketone",
+    "fr_NH2": "amine_primary",
+    "fr_NH1": "amine_secondary",
+    "fr_NH0": "amine_tertiary",
+    "fr_ArN": "aromatic_amine",
+    "fr_aniline": "aniline",
+    "fr_Imine": "imine",
+    "fr_oxime": "oxime",
+    "fr_hdrzone": "hydrazone",
+    "fr_azide": "azide",
+    "fr_azo": "azo",
+    "fr_nitro": "nitro",
+    "fr_nitrile": "nitrile",
+    "fr_isocyan": "isocyanate",
+    "fr_isothiocyan": "isothiocyanate",
+    "fr_urea": "urea",
+    "fr_guanido": "guanidine",
+    "fr_Al_OH": "alcohol",
+    "fr_Ar_OH": "phenol",
+    "fr_phenol": "phenol",
+    "fr_ether": "ether",
+    "fr_epoxide": "epoxide",
+    "fr_SH": "thiol",
+    "fr_sulfide": "thioether",
+    "fr_sulfone": "sulfone",
+    "fr_sulfonamd": "sulfonamide",
+    "fr_alkyl_halide": "alkyl_halide",
+    "fr_halogen": "halogen",
+    "fr_benzene": "benzene",
+    "fr_furan": "furan",
+    "fr_thiophene": "thiophene",
+    "fr_thiazole": "thiazole",
+    "fr_imidazole": "imidazole",
+    "fr_oxazole": "oxazole",
+    "fr_pyridine": "pyridine",
+    "fr_tetrazole": "tetrazole",
+    "fr_lactam": "beta_lactam",
+    "fr_lactone": "lactone"
+  },
+
+  "fr_standalone": {
+    "fr_Al_COO": "Aliphatic carboxylic acids",
+    "fr_Al_OH_noTert": "Aliphatic hydroxyl groups excluding tertiary alcohols",
+    "fr_Ar_COO": "Aromatic carboxylic acids",
+    "fr_Ar_N": "Aromatic nitrogens",
+    "fr_Ar_NH": "Aromatic amines",
+    "fr_C_O": "Carbonyl oxygens",
+    "fr_C_O_noCOO": "Carbonyl oxygens excluding carboxylic acids",
+    "fr_C_S": "Thiocarbonyl groups",
+    "fr_HOCCN": "C(OH)CCN tertiary/cyclic amine alcohol motifs",
+    "fr_N_O": "Hydroxylamine groups",
+    "fr_Ndealkylation1": "N-dealkylation sites, type 1",
+    "fr_Ndealkylation2": "N-dealkylation sites, type 2",
+    "fr_Nhpyrrole": "H-pyrrole nitrogens",
+    "fr_alkyl_carbamate": "Alkyl carbamates",
+    "fr_allylic_oxid": "Allylic oxidation sites",
+    "fr_amidine": "Amidine groups",
+    "fr_aryl_methyl": "Aryl methyl sites for hydroxylation",
+    "fr_barbitur": "Barbiturate groups",
+    "fr_benzodiazepine": "Benzodiazepines",
+    "fr_bicyclic": "Bicyclic systems",
+    "fr_diazo": "Diazo groups",
+    "fr_dihydropyridine": "Dihydropyridines",
+    "fr_hdrzine": "Hydrazine groups",
+    "fr_ketone_Topliss": "Topliss ketones",
+    "fr_methoxy": "Methoxy groups",
+    "fr_morpholine": "Morpholine rings",
+    "fr_nitro_arom": "Aromatic nitro groups",
+    "fr_nitro_arom_nonortho": "Non-ortho aromatic nitro groups",
+    "fr_nitroso": "Nitroso groups excluding nitro groups",
+    "fr_para_hydroxylation": "Para-hydroxylation sites",
+    "fr_phenol_noOrthoHbond": "Phenols excluding ortho intramolecular H-bonding cases",
+    "fr_phos_acid": "Phosphoric acid groups",
+    "fr_phos_ester": "Phosphoric ester groups",
+    "fr_piperdine": "Piperidine rings",
+    "fr_piperzine": "Piperazine rings",
+    "fr_priamide": "Primary amides",
+    "fr_prisulfonamd": "Primary sulfonamides",
+    "fr_quatN": "Quaternary nitrogens",
+    "fr_term_acetylene": "Terminal alkynes",
+    "fr_thiocyan": "Thiocyanates",
+    "fr_unbrch_alkane": "Unbranched alkanes"
+}
+
+}
+

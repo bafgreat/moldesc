@@ -7,4 +7,15 @@ requires-python = ">=3.10"
 dependencies = [
     "h5py>=3.16.0",
     "mofstructure>=0.1.8.6",
+    "pubchempy>=1.0.5",
+    "rdkit>=2026.3.3",
+]
+
+[tool.setuptools.package-data]
+moldesc = [
+  "data/*.json",
+  "data/*.csv",
+  "data/*.txt",
+  "data/*.yaml",
+  "data/*.yml"
 ]
